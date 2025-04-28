@@ -6,6 +6,8 @@ import ProblemSection from "@/components/home/problem-section";
 import BenefitsSection from "@/components/home/benefits-section";
 import HowItWorksSection from "@/components/home/how-it-works-section";
 import CtaSection from "@/components/home/cta-section";
+import LogoCloud from "@/components/home/logo-cloud";
+import AutonomousSection from "@/components/home/autonomous-section";
 
 const Index = () => {
   return (
@@ -13,7 +15,9 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <LogoCloud />
         <ProblemSection />
+        <AutonomousSection />
         <BenefitsSection />
         <HowItWorksSection />
         <CtaSection />
