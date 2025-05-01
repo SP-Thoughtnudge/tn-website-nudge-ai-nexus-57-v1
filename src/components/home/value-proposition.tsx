@@ -1,5 +1,5 @@
 
-import { BrainCircuit, Target, TrendingUp } from "lucide-react";
+import { BrainCircuit, Target, TrendingUp, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const ValueCard = ({ icon: Icon, title, description }) => {
