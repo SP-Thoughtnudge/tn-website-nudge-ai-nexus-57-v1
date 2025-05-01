@@ -2,12 +2,13 @@
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import HeroSection from "@/components/home/hero-section";
-import ProblemSection from "@/components/home/problem-section";
-import BenefitsSection from "@/components/home/benefits-section";
-import HowItWorksSection from "@/components/home/how-it-works-section";
+import ValueProposition from "@/components/home/value-proposition";
+import AutonomousSection from "@/components/home/autonomous-section";
+import IntegrationSection from "@/components/home/integration-section";
+import TestimonialSection from "@/components/home/testimonial-section";
+import NeuronudgeSection from "@/components/home/neuronudge-section";
 import CtaSection from "@/components/home/cta-section";
 import LogoCloud from "@/components/home/logo-cloud";
-import AutonomousSection from "@/components/home/autonomous-section";
 
 const Index = () => {
   return (
@@ -16,10 +17,11 @@ const Index = () => {
       <main className="flex-grow">
         <HeroSection />
         <LogoCloud />
-        <ProblemSection />
+        <ValueProposition />
         <AutonomousSection />
-        <BenefitsSection />
-        <HowItWorksSection />
+        <IntegrationSection />
+        <NeuronudgeSection />
+        <TestimonialSection />
         <CtaSection />
       </main>
       <Footer />
