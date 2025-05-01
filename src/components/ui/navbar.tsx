@@ -32,6 +32,9 @@ const Navbar = () => {
           <Link to="/integrations" className="text-gray-700 hover:text-brand-orange transition-colors">
             Integrations
           </Link>
+          <Link to="/brochure" className="text-gray-700 hover:text-brand-orange transition-colors">
+            Brochure
+          </Link>
           <Link to="/about" className="text-gray-700 hover:text-brand-orange transition-colors">
             About
           </Link>
@@ -80,6 +83,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Integrations
+            </Link>
+            <Link 
+              to="/brochure" 
+              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Brochure
             </Link>
             <Link 
               to="/about" 
