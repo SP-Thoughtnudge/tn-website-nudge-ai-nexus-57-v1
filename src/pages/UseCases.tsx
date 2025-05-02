@@ -2,7 +2,6 @@
 import React from "react";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
-import IntegrationsCloud from "@/components/product/integrations-cloud";
 import { 
   ShoppingCart, 
   TrendingUp, 
@@ -266,12 +265,6 @@ const UseCases = () => {
             </div>
           </div>
           
-          {/* Integration section */}
-          <div className="mb-16">
-            <h2 className="text-2xl font-bold text-center mb-8">Seamlessly Integrates With Your Tech Stack</h2>
-            <IntegrationsCloud />
-          </div>
-          
           {/* Further reading */}
           <div className="bg-gray-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-center mb-8">Further Reading</h2>
@@ -285,7 +278,7 @@ const UseCases = () => {
                       Learn how autonomous AI agents are changing the customer engagement landscape.
                     </p>
                     <div className="mt-4">
-                      <a href="#" className="text-brand-orange flex items-center hover:underline">
+                      <a href="/blogs" className="text-brand-orange flex items-center hover:underline">
                         Read more
                         <ArrowRight className="h-4 w-4 ml-1" />
                       </a>

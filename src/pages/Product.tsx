@@ -11,6 +11,9 @@ import CustomerJourney from "@/components/product/customer-journey";
 import PsychographicProfiles from "@/components/product/psychographic-profiles";
 import IntegrationsCloud from "@/components/product/integrations-cloud";
 import DecisionIntelligence from "@/components/product/decision-intelligence";
+import ContinuousIntelligence from "@/components/product/continuous-intelligence";
+import BeyondTraditional from "@/components/product/beyond-traditional";
+import FaqSection from "@/components/product/faq-section";
 
 const Product = () => {
   return (
@@ -142,6 +145,12 @@ const Product = () => {
             </div>
           </div>
         </section>
+
+        {/* Beyond Traditional Methods Section (New) */}
+        <BeyondTraditional />
+
+        {/* Continuous Intelligence Section (New) */}
+        <ContinuousIntelligence />
 
         {/* How Agents Work */}
         <section className="py-20 bg-gray-50">
@@ -348,6 +357,9 @@ const Product = () => {
           </div>
         </section>
 
+        {/* FAQ Section (New) */}
+        <FaqSection />
+
         {/* CTA Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
@@ -365,8 +377,8 @@ const Product = () => {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link to="/case-studies">
-                    View Customer Stories
+                  <Link to="/blogs">
+                    Read Our Blog
                   </Link>
                 </Button>
               </div>
