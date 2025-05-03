@@ -27,7 +27,7 @@ const BeyondTraditional = () => {
     {
       traditional: {
         title: "A/B Testing",
-        description: "Run experiments to find a single "winner" to apply to everyone.",
+        description: "Run experiments to find a single \"winner\" to apply to everyone.",
         disadvantages: [
           "One-size-fits-all approach ignores individual preferences",
           "Slow, manual setup and analysis",
@@ -38,7 +38,7 @@ const BeyondTraditional = () => {
         title: "Continuous Experimentation",
         description: "Run thousands of micro-experiments per customer to find what works for each individual.",
         advantages: [
-          "Different "winners" for different customers",
+          "Different \"winners\" for different customers",
           "Automated setup and optimization",
           "Tests all variables at once: message, timing, channel, etc."
         ]
