@@ -14,8 +14,9 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm z-50 py-4 border-b border-gray-100">
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex flex-col">
           <span className="text-2xl font-bold text-brand-black">ThoughtNudge</span>
+          <span className="text-xs text-brand-orange font-medium -mt-1">AI Decisioning for 1:1 Personalization</span>
         </Link>
 
         {/* Desktop Navigation */}
