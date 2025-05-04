@@ -6,14 +6,14 @@ import { LinkedinIcon } from "lucide-react";
 const TeamSection = () => {
   const founders = [
     {
-      name: "Founder",
+      name: "First Founder",
       role: "Co-Founder & CEO",
       bio: "Previously deployed conversational AI systems across multiple channels, working with enterprise marketing and CX teams globally. Identified the critical need for centralized customer intelligence beyond siloed channels.",
       image: "/placeholder.svg",
       linkedin: "#"
     },
     {
-      name: "SP",
+      name: "Second Founder",
       role: "Co-Founder & CTO",
       bio: "Former Amazon leader who implemented 1:1 personalization at scale, driving significant improvements in customer lifetime value, conversion rates, and user retention through AI-powered systems.",
       image: "/placeholder.svg",
