@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Target, Users, Trending, Lightbulb } from "lucide-react";
+import { Target, Users, TrendingUp, Lightbulb } from "lucide-react";
 
 const ImpactSection = () => {
   return (
@@ -29,7 +29,7 @@ const ImpactSection = () => {
             
             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="h-12 w-12 bg-brand-pink/10 rounded-lg flex items-center justify-center mb-6">
-                <Trending className="h-6 w-6 text-brand-pink" />
+                <TrendingUp className="h-6 w-6 text-brand-pink" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-brand-black">For Growth Leaders</h3>
               <p className="text-gray-600">
