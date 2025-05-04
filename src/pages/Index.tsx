@@ -9,6 +9,7 @@ import TestimonialSection from "@/components/home/testimonial-section";
 import NeuronudgeSection from "@/components/home/neuronudge-section";
 import CtaSection from "@/components/home/cta-section";
 import LogoCloud from "@/components/home/logo-cloud";
+import HowItWorksSection from "@/components/home/how-it-works-section";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <LogoCloud />
         <ValueProposition />
         <AutonomousSection />
+        <HowItWorksSection />
         <IntegrationSection />
         <NeuronudgeSection />
         <TestimonialSection />
