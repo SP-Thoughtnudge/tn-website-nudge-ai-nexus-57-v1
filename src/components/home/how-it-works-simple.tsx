@@ -84,10 +84,10 @@ const HowItWorksSimple = () => {
           
           <div className="mt-8 text-center">
             <Link 
-              to="/product" 
+              to="/how-it-works" 
               className="inline-flex items-center text-brand-orange hover:text-brand-orange/80 font-medium"
             >
-              <span>Learn more about our technology</span>
+              <span>Learn more about how it works</span>
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </div>

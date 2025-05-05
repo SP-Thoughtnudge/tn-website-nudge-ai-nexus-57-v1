@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import UseCases from "./pages/UseCases";
 import Product from "./pages/Product";
+import HowItWorks from "./pages/HowItWorks";
 import Integrations from "./pages/Integrations";
 import About from "./pages/About";
 import Brochure from "./pages/Brochure";
@@ -28,6 +29,7 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/use-cases" element={<UseCases />} />
             <Route path="/product" element={<Product />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/integrations" element={<Integrations />} />
             <Route path="/about" element={<About />} />
             <Route path="/brochure" element={<Brochure />} />

@@ -24,6 +24,9 @@ const Navbar = () => {
           <Link to="/product" className="text-gray-700 hover:text-brand-orange transition-colors">
             Product
           </Link>
+          <Link to="/how-it-works" className="text-gray-700 hover:text-brand-orange transition-colors">
+            How It Works
+          </Link>
           <Link to="/use-cases" className="text-gray-700 hover:text-brand-orange transition-colors">
             Use Cases
           </Link>
@@ -63,6 +66,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Product
+            </Link>
+            <Link 
+              to="/how-it-works" 
+              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              How It Works
             </Link>
             <Link 
               to="/use-cases" 
