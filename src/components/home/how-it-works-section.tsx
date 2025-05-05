@@ -77,12 +77,20 @@ const HowItWorksSection = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center flex justify-center space-x-8">
           <Link 
             to="/how-it-works" 
             className="inline-flex items-center text-brand-orange hover:text-brand-orange/80 font-medium"
           >
-            <span>Learn more about our technology</span>
+            <span>See how it works in detail</span>
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
+          
+          <Link 
+            to="/product" 
+            className="inline-flex items-center text-brand-pink hover:text-brand-pink/80 font-medium"
+          >
+            <span>Explore our product features</span>
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>

@@ -8,7 +8,6 @@ import TechnologySection from "@/components/how-it-works/technology-section";
 import ProcessSection from "@/components/how-it-works/process-section";
 import ComparisonSection from "@/components/how-it-works/comparison-section";
 import IntegrationSection from "@/components/how-it-works/integration-section";
-import FaqSection from "@/components/how-it-works/faq-section";
 import CaseStudyPreview from "@/components/how-it-works/case-study-preview";
 
 const HowItWorks = () => {
@@ -43,12 +42,11 @@ const HowItWorks = () => {
         </section>
 
         {/* Technology & Process */}
-        <TechnologySection />
         <ProcessSection />
+        <TechnologySection />
         <ComparisonSection />
         <IntegrationSection />
         <CaseStudyPreview />
-        <FaqSection />
 
         {/* CTA Section */}
         <section className="py-20 bg-gray-50">

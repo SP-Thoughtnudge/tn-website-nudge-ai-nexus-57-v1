@@ -2,99 +2,94 @@
 import { ArrowRight } from "lucide-react";
 
 const ProcessSection = () => {
-  const steps = [
-    {
-      number: "01",
-      title: "Signal Collection",
-      description: "Thoughtnudge collects behavioral, contextual, and psychographic signals across all your customer touchpoints—creating a comprehensive understanding of each individual customer.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=900"
-    },
-    {
-      number: "02",
-      title: "Autonomous Experimentation",
-      description: "Each customer gets their own AI agent that conducts continuous micro-experiments to learn their preferences, motivations, and decision drivers.",
-      image: "https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?auto=format&fit=crop&q=80&w=900"
-    },
-    {
-      number: "03",
-      title: "Intelligent Decisioning",
-      description: "The platform processes these signals through our Neuronudge Framework to determine the optimal message, offer, channel, and timing for each customer.",
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=900"
-    },
-    {
-      number: "04",
-      title: "Dynamic Execution",
-      description: "Decisions are translated into actions across your marketing channels—email, SMS, push notifications, on-site—with no manual campaign setup required.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=900"
-    },
-    {
-      number: "05",
-      title: "Continuous Optimization",
-      description: "The system learns from each interaction, continuously improving its understanding and effectiveness, optimizing toward your business goals.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=900"
-    }
-  ];
-
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
             How Thoughtnudge Works
           </h2>
           <p className="text-xl text-gray-600">
-            From signal collection to continuous optimization, our platform handles the entire customer engagement cycle autonomously.
+            Our AI platform transforms customer engagement through a seamless five-step process.
           </p>
         </div>
 
-        <div className="space-y-16">
-          {steps.map((step, index) => (
-            <div 
-              key={step.number}
-              className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 lg:gap-16 items-center`}
-            >
-              <div className="w-full md:w-1/2 space-y-6">
-                <span className="inline-block text-4xl font-bold text-brand-orange/40">
-                  {step.number}
-                </span>
-                <h3 className="text-2xl md:text-3xl font-bold text-brand-black">
-                  {step.title}
-                </h3>
-                <p className="text-lg text-gray-600">
-                  {step.description}
-                </p>
-              </div>
-              <div className="w-full md:w-1/2">
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <img 
-                    src={step.image} 
-                    alt={step.title} 
-                    className="w-full h-auto object-cover"
-                  />
+        {/* Visual Process Flow */}
+        <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-sm">
+          <div className="relative">
+            {/* Connection Lines */}
+            <div className="hidden md:block absolute top-1/2 left-10 right-10 h-1 bg-brand-orange/30 -translate-y-1/2 z-0"></div>
+            
+            {/* Process Steps */}
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-5 gap-8">
+              {/* Step 1 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold text-brand-orange">1</span>
                 </div>
+                <h3 className="text-lg font-semibold text-brand-black mb-2">Signal Collection</h3>
+                <p className="text-sm text-gray-600">Collects behavioral and contextual data</p>
               </div>
-            </div>
-          ))}
-        </div>
 
-        <div className="mt-16 bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100">
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-1/2">
-              <div className="aspect-video bg-gray-100 rounded flex items-center justify-center">
-                [Interactive animation showing the agent learning cycle]
+              {/* Step 2 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-pink/10 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold text-brand-pink">2</span>
+                </div>
+                <h3 className="text-lg font-semibold text-brand-black mb-2">Experimentation</h3>
+                <p className="text-sm text-gray-600">Conducts micro-tests to learn preferences</p>
               </div>
-            </div>
-            <div className="w-full md:w-1/2 space-y-6">
-              <h3 className="text-2xl font-bold text-brand-black">The Agent Learning Cycle</h3>
-              <p className="text-gray-600">
-                Unlike static systems that follow pre-defined rules, Thoughtnudge's agents continuously learn and adapt. Every interaction becomes an opportunity to improve future decisions.
-              </p>
-              <div className="flex items-center">
-                <ArrowRight className="text-brand-orange mr-2" />
-                <span className="text-brand-black font-medium">See how this drives higher conversions</span>
+
+              {/* Step 3 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold text-brand-yellow">3</span>
+                </div>
+                <h3 className="text-lg font-semibold text-brand-black mb-2">AI Decision</h3>
+                <p className="text-sm text-gray-600">Processes through our Neuronudge Framework</p>
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold text-brand-orange">4</span>
+                </div>
+                <h3 className="text-lg font-semibold text-brand-black mb-2">Execution</h3>
+                <p className="text-sm text-gray-600">Delivers personalized content via optimal channels</p>
+              </div>
+
+              {/* Step 5 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-pink/10 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold text-brand-pink">5</span>
+                </div>
+                <h3 className="text-lg font-semibold text-brand-black mb-2">Optimization</h3>
+                <p className="text-sm text-gray-600">Continuously learns and improves from results</p>
               </div>
             </div>
           </div>
+
+          {/* Learning Loop Indicator */}
+          <div className="mt-10 pt-6 border-t border-gray-200">
+            <div className="flex items-center justify-center">
+              <div className="w-8 h-8 bg-brand-orange/20 rounded-full flex items-center justify-center mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-brand-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <p className="text-sm font-medium text-gray-600">
+                The system continuously learns and adapts with each interaction
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Interactive Demo Button */}
+        <div className="mt-10 text-center">
+          <button className="inline-flex items-center px-6 py-3 bg-brand-orange text-white rounded-lg hover:bg-brand-orange/90 transition-colors">
+            <span className="mr-2">See Interactive Demo</span>
+            <ArrowRight className="h-5 w-5" />
+          </button>
         </div>
       </div>
     </section>

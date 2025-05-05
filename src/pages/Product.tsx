@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/ui/navbar";
@@ -13,7 +12,6 @@ import IntegrationsCloud from "@/components/product/integrations-cloud";
 import DecisionIntelligence from "@/components/product/decision-intelligence";
 import ContinuousIntelligence from "@/components/product/continuous-intelligence";
 import BeyondTraditional from "@/components/product/beyond-traditional";
-import FaqSection from "@/components/product/faq-section";
 
 const Product = () => {
   return (
@@ -146,10 +144,10 @@ const Product = () => {
           </div>
         </section>
 
-        {/* Beyond Traditional Methods Section (New) */}
+        {/* Beyond Traditional Methods Section */}
         <BeyondTraditional />
 
-        {/* Continuous Intelligence Section (New) */}
+        {/* Continuous Intelligence Section */}
         <ContinuousIntelligence />
 
         {/* How Agents Work */}
@@ -356,9 +354,6 @@ const Product = () => {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section (New) */}
-        <FaqSection />
 
         {/* CTA Section */}
         <section className="py-20 bg-gray-50">
