@@ -17,24 +17,24 @@ const CoreInsight = () => {
               </h2>
               <div className="h-1 w-20 bg-brand-pink mb-6"></div>
               
-              <p className="text-gray-600 mb-6 text-lg">
+              <p className="text-brand-gray mb-6 text-lg">
                 Customers leave signals everywhere — what they click, what they ignore, how they feel, what they need.
                 But most systems can't use these signals in real time, let alone adapt to them.
               </p>
               
-              <p className="text-gray-600 mb-6">
+              <p className="text-brand-gray mb-6">
                 Another co-founder saw the other side of this at Amazon — where true 1:1 personalization wasn't just a buzzword, 
                 it was driving massive results: higher LTV, better conversions, and world-class retention.
               </p>
               
               <div className="bg-white p-6 rounded-xl border border-gray-100 mt-8">
                 <p className="text-xl font-semibold text-brand-black mb-3">The contrast was clear.</p>
-                <p className="text-gray-700 text-lg">Why should only tech giants have this advantage?</p>
+                <p className="text-brand-gray text-lg">Why should only tech giants have this advantage?</p>
               </div>
             </div>
             
             <div className="md:col-span-2">
-              <div className="bg-white p-1 rounded-lg shadow-md overflow-hidden">
+              <div className="bg-white p-1 rounded-lg shadow-md overflow-hidden border-2 border-brand-yellow">
                 <img 
                   src="/placeholder.svg" 
                   alt="Data visualization showing customer signals" 

@@ -21,7 +21,7 @@ const CtaSection = () => {
               Join innovative brands using ThoughtNudge to deliver hyper-personalized interactions that drive conversions and build lasting customer relationships—all with minimal effort.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="orange" size="xl" className="group">
+              <Button variant="pink" size="xl" className="group">
                 Book a Demo
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>

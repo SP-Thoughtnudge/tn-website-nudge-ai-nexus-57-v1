@@ -101,4 +101,22 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1, h2, h3 {
+    @apply text-brand-black;
+  }
+
+  .text-gradient-pink-orange {
+    @apply bg-gradient-to-r from-brand-pink to-brand-orange bg-clip-text text-transparent;
+  }
+
+  .text-gradient-orange-yellow {
+    @apply bg-gradient-to-r from-brand-orange to-brand-yellow bg-clip-text text-transparent;
+  }
+
+  .border-gradient {
+    @apply border-2 border-transparent bg-gradient-to-r from-brand-pink via-brand-orange to-brand-yellow;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
 }

@@ -27,11 +27,11 @@ const HowItWorks = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-brand-black mb-6 animate-fade-in">
                 Agentic AI That Learns Each Customer Individually
               </h1>
-              <p className="text-xl text-gray-600 mb-8 animate-fade-in [animation-delay:200ms]">
+              <p className="text-xl text-brand-gray mb-8 animate-fade-in [animation-delay:200ms]">
                 Thoughtnudge replaces static rules and manual optimization with autonomous agents that continuously experiment, learn, and adapt to each customer in real-time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in [animation-delay:400ms]">
-                <Button variant="orange" size="lg" asChild>
+                <Button variant="pink" size="lg" asChild>
                   <Link to="/demo">
                     Get a Demo
                   </Link>
@@ -55,11 +55,11 @@ const HowItWorks = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
                 Ready to Transform Your Customer Engagement?
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-brand-gray mb-8">
                 Join innovative brands using Thoughtnudge to deliver hyper-personalized experiences that drive conversions without the manual work.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="orange" size="lg" asChild>
+                <Button variant="pink" size="lg" asChild>
                   <Link to="/demo">
                     Request a Demo
                   </Link>

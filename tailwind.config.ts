@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -69,8 +70,9 @@ export default {
 				brand: {
 					black: '#000000',
 					orange: '#F97316',
-					pink: '#D946EF',
-					yellow: '#FEF7CD'
+					pink: '#D72660',
+					yellow: '#F6C343',
+					gray: '#5A5A5A'
 				}
 			},
 			borderRadius: {

@@ -16,40 +16,40 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link to="/" className="flex flex-col">
           <span className="text-2xl font-bold text-brand-black">ThoughtNudge</span>
-          <span className="text-xs text-brand-orange font-medium -mt-1">AI Decisioning for 1:1 Personalization</span>
+          <span className="text-xs text-brand-pink font-medium -mt-1">AI Decisioning for 1:1 Personalization</span>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/product" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/product" className="text-brand-gray hover:text-brand-orange transition-colors">
             Product
           </Link>
-          <Link to="/how-it-works" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/how-it-works" className="text-brand-gray hover:text-brand-orange transition-colors">
             How It Works
           </Link>
-          <Link to="/use-cases" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/use-cases" className="text-brand-gray hover:text-brand-orange transition-colors">
             Use Cases
           </Link>
-          <Link to="/integrations" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/integrations" className="text-brand-gray hover:text-brand-orange transition-colors">
             Integrations
           </Link>
-          <Link to="/blogs" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/blogs" className="text-brand-gray hover:text-brand-orange transition-colors">
             Blogs
           </Link>
-          <Link to="/demo-deck" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/demo-deck" className="text-brand-gray hover:text-brand-orange transition-colors">
             Demo Deck
           </Link>
-          <Link to="/about" className="text-gray-700 hover:text-brand-orange transition-colors">
+          <Link to="/about" className="text-brand-gray hover:text-brand-orange transition-colors">
             About
           </Link>
-          <Button variant="orange" className="ml-4">
+          <Button variant="pink" className="ml-4">
             Book a Demo
           </Button>
         </div>
 
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden text-gray-700 hover:text-brand-orange"
+          className="md:hidden text-brand-gray hover:text-brand-orange"
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -62,54 +62,54 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link 
               to="/product" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Product
             </Link>
             <Link 
               to="/how-it-works" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               How It Works
             </Link>
             <Link 
               to="/use-cases" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Use Cases
             </Link>
             <Link 
               to="/integrations" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Integrations
             </Link>
             <Link 
               to="/blogs" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Blogs
             </Link>
             <Link 
               to="/demo-deck" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Demo Deck
             </Link>
             <Link 
               to="/about" 
-              className="text-gray-700 hover:text-brand-orange py-2 transition-colors"
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
-            <Button variant="orange" className="mt-2">
+            <Button variant="pink" className="mt-2">
               Book a Demo
             </Button>
           </div>
