@@ -14,6 +14,7 @@ import Integrations from "./pages/Integrations";
 import About from "./pages/About";
 import DemoDeck from "./pages/DemoDeck";
 import Blogs from "./pages/Blogs";
+import Test from "./pages/Test";
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/demo-deck" element={<DemoDeck />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/test" element={<Test />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

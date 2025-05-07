@@ -39,6 +39,9 @@ const Navbar = () => {
           <Link to="/demo-deck" className="text-brand-gray hover:text-brand-orange transition-colors">
             Demo Deck
           </Link>
+          <Link to="/test" className="text-brand-gray hover:text-brand-orange transition-colors">
+            Test
+          </Link>
           <Link to="/about" className="text-brand-gray hover:text-brand-orange transition-colors">
             About
           </Link>
@@ -101,6 +104,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Demo Deck
+            </Link>
+            <Link 
+              to="/test" 
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Test
             </Link>
             <Link 
               to="/about" 
