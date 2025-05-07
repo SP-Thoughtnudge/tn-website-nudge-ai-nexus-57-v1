@@ -40,7 +40,7 @@ const Test = () => {
                       </div>
                       <div className="bg-white p-2 rounded border border-gray-200 mb-1 text-xs">
                         <span className="text-2xs text-brand-gray">GOAL</span>
-                        <p className="font-medium">Increase post-booking revenue by 40%</p>
+                        <p className="font-medium">Increase post-booking revenue</p>
                       </div>
                       <div className="bg-white p-2 rounded border border-gray-200 text-xs">
                         <span className="text-2xs text-brand-gray">AUDIENCE</span>
@@ -140,7 +140,7 @@ const Test = () => {
                 <div className="p-3">
                   {/* User Profiles */}
                   <div className="space-y-3">
-                    {/* Customer 1 */}
+                    {/* Customer 1 - Direct success */}
                     <div className="bg-gray-50 p-2 rounded">
                       <div className="flex items-center justify-between mb-1">
                         <div className="flex items-center gap-1">
@@ -151,7 +151,7 @@ const Test = () => {
                         </div>
                       </div>
                       
-                      {/* Journey Steps */}
+                      {/* Journey Steps - Direct success */}
                       <div className="flex items-stretch space-x-1 mb-1">
                         <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
                           <div className="flex justify-between items-start">
@@ -166,35 +166,22 @@ const Test = () => {
                           </div>
                         </div>
                         <ArrowRight className="h-3 w-3 self-center text-gray-400" />
-                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
-                          <div className="flex justify-between items-start">
-                            <span className="font-medium flex items-center gap-1">
-                              <Bell size={8} /> Push
-                            </span>
-                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Wed 4pm</span>
-                          </div>
-                          <div className="flex justify-between text-2xs text-brand-gray">
-                            <span>Spa Package</span>
-                            <span>Personal M8</span>
-                          </div>
-                        </div>
-                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
                         <div className="bg-green-50 p-1 rounded border border-green-200 flex-1 flex flex-col text-2xs">
                           <div className="flex justify-between items-start">
                             <span className="font-medium text-green-700 flex items-center gap-1">
                               <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Wed 5pm</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Mon 11am</span>
                           </div>
                           <div className="text-2xs text-green-600 flex justify-between">
-                            <span>$350 Spa Package</span>
+                            <span>Premium Suite</span>
                             <span>Loyalty 2x</span>
                           </div>
                         </div>
                       </div>
                     </div>
                     
-                    {/* Customer 2 */}
+                    {/* Customer 2 - Channel adaptation */}
                     <div className="bg-gray-50 p-2 rounded">
                       <div className="flex items-center justify-between mb-1">
                         <div className="flex items-center gap-1">
@@ -205,31 +192,34 @@ const Test = () => {
                         </div>
                       </div>
                       
-                      {/* Journey Steps */}
+                      {/* Journey Steps - Channel adaptation */}
                       <div className="flex items-stretch space-x-1">
                         <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
                           <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <MessageSquare size={8} /> SMS
+                              <Mail size={8} /> Email
                             </span>
                             <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Tue 7am</span>
                           </div>
                           <div className="flex justify-between text-2xs text-brand-gray">
                             <span>Airport Transfer</span>
-                            <span>Urgent M4</span>
+                            <span>Formal M4</span>
+                          </div>
+                          <div className="mt-0.5 bg-yellow-50 px-1 rounded text-2xs text-yellow-600 flex items-center gap-0.5">
+                            <Info size={8} /> Opened, No action
                           </div>
                         </div>
                         <ArrowRight className="h-3 w-3 self-center text-gray-400" />
                         <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
                           <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Mail size={8} /> Email
+                              <MessageSquare size={8} /> SMS
                             </span>
                             <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Thu 6pm</span>
                           </div>
                           <div className="flex justify-between text-2xs text-brand-gray">
-                            <span>Late Checkout</span>
-                            <span>Formal M12</span>
+                            <span>Same offer</span>
+                            <span>Urgent M12</span>
                           </div>
                         </div>
                         <ArrowRight className="h-3 w-3 self-center text-gray-400" />
@@ -238,17 +228,17 @@ const Test = () => {
                             <span className="font-medium text-green-700 flex items-center gap-1">
                               <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Fri 8am</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Thu 7pm</span>
                           </div>
                           <div className="text-2xs text-green-600 flex justify-between">
-                            <span>Both Services</span>
+                            <span>Airport Transfer</span>
                             <span>Bundle Discount</span>
                           </div>
                         </div>
                       </div>
                     </div>
                     
-                    {/* Customer 3 */}
+                    {/* Customer 3 - Time/Day/Channel adaptation */}
                     <div className="bg-gray-50 p-2 rounded">
                       <div className="flex items-center justify-between mb-1">
                         <div className="flex items-center gap-1">
@@ -259,7 +249,7 @@ const Test = () => {
                         </div>
                       </div>
                       
-                      {/* Journey Steps */}
+                      {/* Journey Steps - Time/Channel adaptation */}
                       <div className="flex items-stretch space-x-1">
                         <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
                           <div className="flex justify-between items-start">
@@ -272,6 +262,9 @@ const Test = () => {
                             <span>Dining Credit</span>
                             <span>Excited M3</span>
                           </div>
+                          <div className="mt-0.5 bg-red-50 px-1 rounded text-2xs text-red-600 flex items-center gap-0.5">
+                            <Info size={8} /> Not opened
+                          </div>
                         </div>
                         <ArrowRight className="h-3 w-3 self-center text-gray-400" />
                         <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
@@ -279,10 +272,10 @@ const Test = () => {
                             <span className="font-medium flex items-center gap-1">
                               <Mic size={8} /> Voice
                             </span>
-                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Fri 5pm</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Sat 10am</span>
                           </div>
                           <div className="flex justify-between text-2xs text-brand-gray">
-                            <span>Room Upgrade</span>
+                            <span>Dining Credit</span>
                             <span>Personal M15</span>
                           </div>
                         </div>
@@ -292,17 +285,17 @@ const Test = () => {
                             <span className="font-medium text-green-700 flex items-center gap-1">
                               <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Sat 9am</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Sat 11am</span>
                           </div>
                           <div className="text-2xs text-green-600 flex justify-between">
-                            <span>Room Upgrade</span>
+                            <span>Family Dining</span>
                             <span>Early Bird 20%</span>
                           </div>
                         </div>
                       </div>
                     </div>
                     
-                    {/* Customer 4 */}
+                    {/* Customer 4 - Product adaptation */}
                     <div className="bg-gray-50 p-2 rounded">
                       <div className="flex items-center justify-between mb-1">
                         <div className="flex items-center gap-1">
@@ -313,7 +306,7 @@ const Test = () => {
                         </div>
                       </div>
                       
-                      {/* Journey Steps */}
+                      {/* Journey Steps - Product adaptation */}
                       <div className="flex items-stretch space-x-1">
                         <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
                           <div className="flex justify-between items-start">
@@ -325,6 +318,9 @@ const Test = () => {
                           <div className="flex justify-between text-2xs text-brand-gray">
                             <span>Late Checkout</span>
                             <span>Casual M7</span>
+                          </div>
+                          <div className="mt-0.5 bg-yellow-50 px-1 rounded text-2xs text-yellow-600 flex items-center gap-0.5">
+                            <Info size={8} /> Viewed, No action
                           </div>
                         </div>
                         <ArrowRight className="h-3 w-3 self-center text-gray-400" />
@@ -376,9 +372,9 @@ const Test = () => {
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
                       <li className="text-2xs text-brand-gray">Emotional: Aspirational, status-driven</li>
-                      <li className="text-2xs text-brand-gray">Tone preference: Sophisticated, exclusive</li>
+                      <li className="text-2xs text-brand-gray">Tone preference: Sophisticated, formal</li>
                       <li className="text-2xs text-brand-gray">Opens emails 9am-10am (87%)</li>
-                      <li className="text-2xs text-brand-gray">Push sent after email unopened 24hrs</li>
+                      <li className="text-2xs text-brand-gray">First-attempt conversion confirmed tone & timing matches</li>
                     </ul>
                   </div>
                   
@@ -391,9 +387,9 @@ const Test = () => {
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
                       <li className="text-2xs text-brand-gray">Emotional: Practical, efficiency-focused</li>
-                      <li className="text-2xs text-brand-gray">Tone preference: Direct, concise</li>
-                      <li className="text-2xs text-brand-gray">High SMS response rate (92%)</li>
-                      <li className="text-2xs text-brand-gray">Email follow-up with formal details</li>
+                      <li className="text-2xs text-brand-gray">Tone preference: Direct, urgent</li>
+                      <li className="text-2xs text-brand-gray">Channel shift after email open without action</li>
+                      <li className="text-2xs text-brand-gray">SMS response rate jumped to 92% after urgency applied</li>
                     </ul>
                   </div>
 
@@ -406,9 +402,9 @@ const Test = () => {
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
                       <li className="text-2xs text-brand-gray">Emotional: Family-focused, value-seeking</li>
-                      <li className="text-2xs text-brand-gray">Tone preference: Friendly, enthusiastic</li>
-                      <li className="text-2xs text-brand-gray">Room upgrade urgency created after 2PM follow-up call</li>
-                      <li className="text-2xs text-brand-gray">Voice performed 3x better than email</li>
+                      <li className="text-2xs text-brand-gray">Tone preference changed from excited to personal</li>
+                      <li className="text-2xs text-brand-gray">Weekend engagement 3x higher than weekdays</li>
+                      <li className="text-2xs text-brand-gray">Voice performed 5x better than email for this segment</li>
                     </ul>
                   </div>
                   
@@ -421,9 +417,9 @@ const Test = () => {
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
                       <li className="text-2xs text-brand-gray">Emotional: Price-conscious, deal-seeking</li>
-                      <li className="text-2xs text-brand-gray">Tone preference: Casual, straightforward</li>
-                      <li className="text-2xs text-brand-gray">Push → SMS sequence when free offer available</li>
-                      <li className="text-2xs text-brand-gray">Time-limited offer created urgency</li>
+                      <li className="text-2xs text-brand-gray">Tone shift: Casual → Urgent drives action</li>
+                      <li className="text-2xs text-brand-gray">Product switch after interest but no purchase</li>
+                      <li className="text-2xs text-brand-gray">"Free" terminology increased conversion by 65%</li>
                     </ul>
                   </div>
                 </div>
@@ -435,7 +431,7 @@ const Test = () => {
               <h3 className="text-lg font-bold text-brand-black mb-1">No Black Box - Full Transparency</h3>
               <p className="text-xs text-brand-gray mb-3 max-w-3xl mx-auto">
                 Thoughtnudge provides complete visibility into every AI decision, 
-                optimizing for each guest like a dedicated concierge working 24/7.
+                optimizing and learning from each guest interaction like a dedicated concierge working 24/7.
               </p>
               <div className="flex justify-center gap-3">
                 <Button variant="orange" size="sm" className="text-xs">
