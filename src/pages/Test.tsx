@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
-import { ArrowRight, Check, MessageSquare, Users, Mail, Bell, Mic, Target, Package, CircleCheck, CircleX, Info, Settings } from "lucide-react";
+import { ArrowRight, Check, MessageSquare, Users, Mail, Bell, Mic, Target, Package, CircleCheck, CircleX, Info, Settings, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
@@ -10,301 +10,348 @@ const Test = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-1 pt-20 pb-12">
+      <main className="flex-1 pt-16 pb-8">
         <section className="container mx-auto px-3">
           <div className="max-w-6xl mx-auto">
-            <h1 className="text-2xl md:text-3xl font-bold text-brand-black mb-3 text-center">
-              How Thoughtnudge Makes Decisions
+            <h1 className="text-xl md:text-2xl font-bold text-brand-black mb-2 text-center">
+              How Thoughtnudge Drives Upsell Revenue
             </h1>
-            <p className="text-base text-center text-brand-gray mb-6 max-w-3xl mx-auto">
-              Our AI autonomously drives growth by making the right decision for each customer,
-              at the right time, through the right channel.
+            <p className="text-xs text-center text-brand-gray mb-4 max-w-3xl mx-auto">
+              Our AI autonomously increases hotel revenue by making personalized upsell recommendations 
+              for each guest at optimal moments.
             </p>
 
             {/* Main Content Area */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 mb-6">
               {/* Left Column - Configuration */}
               <div className="lg:col-span-4 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-                <div className="bg-brand-pink/10 p-3 border-b border-gray-100">
-                  <h3 className="text-lg font-semibold text-brand-black">Growth Manager Setup</h3>
+                <div className="bg-[#D72660]/10 p-2 border-b border-gray-100">
+                  <h3 className="text-sm font-semibold text-brand-black">Growth Manager Setup</h3>
                 </div>
-                <div className="p-4">
-                  <div className="space-y-4">
+                <div className="p-3">
+                  <div className="space-y-3">
                     {/* Goal Setting */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="h-6 w-6 rounded-full bg-brand-pink flex items-center justify-center text-white font-medium text-xs">1</div>
-                        <h4 className="font-semibold text-base flex items-center gap-1">
-                          <Target size={16} /> Define Goal
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="h-5 w-5 rounded-full bg-[#D72660] flex items-center justify-center text-white font-medium text-xs">1</div>
+                        <h4 className="font-semibold text-xs flex items-center gap-1">
+                          <Target size={12} /> Define Goal
                         </h4>
                       </div>
-                      <div className="bg-white p-2 rounded border border-gray-200 mb-2 text-sm">
-                        <span className="text-xs text-brand-gray">GOAL</span>
-                        <p className="font-medium">Increase product adoption by 30%</p>
+                      <div className="bg-white p-2 rounded border border-gray-200 mb-1 text-xs">
+                        <span className="text-2xs text-brand-gray">GOAL</span>
+                        <p className="font-medium">Increase post-booking revenue by 40%</p>
                       </div>
-                      <div className="bg-white p-2 rounded border border-gray-200 text-sm">
-                        <span className="text-xs text-brand-gray">AUDIENCE</span>
-                        <p className="font-medium">New users with &lt;2 logins</p>
+                      <div className="bg-white p-2 rounded border border-gray-200 text-xs">
+                        <span className="text-2xs text-brand-gray">AUDIENCE</span>
+                        <p className="font-medium">Guests with confirmed reservations</p>
                       </div>
                     </div>
 
                     {/* Available Options */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="h-6 w-6 rounded-full bg-brand-orange flex items-center justify-center text-white font-medium text-xs">2</div>
-                        <h4 className="font-semibold text-base">Define Options</h4>
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="h-5 w-5 rounded-full bg-[#F6C343] flex items-center justify-center text-[#5A5A5A] font-medium text-xs">2</div>
+                        <h4 className="font-semibold text-xs">Define Options</h4>
                       </div>
-                      <div className="space-y-2">
+                      <div className="space-y-1">
                         <div className="bg-white p-2 rounded border border-gray-200">
-                          <span className="text-xs text-brand-gray flex items-center gap-1 mb-1">CHANNELS</span>
+                          <span className="text-2xs text-brand-gray flex items-center gap-1 mb-1">CHANNELS</span>
                           <div className="flex flex-wrap gap-1">
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><Mail size={10} /> Email</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><MessageSquare size={10} /> SMS</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><Bell size={10} /> Push</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><Mic size={10} /> Voice</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Mail size={8} /> Email</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><MessageSquare size={8} /> SMS</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Bell size={8} /> Push</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Mic size={8} /> Voice</span>
                           </div>
                         </div>
                         <div className="bg-white p-2 rounded border border-gray-200">
-                          <span className="text-xs text-brand-gray flex items-center gap-1 mb-1">PRODUCTS</span>
+                          <span className="text-2xs text-brand-gray flex items-center gap-1 mb-1">UPSELL PRODUCTS</span>
                           <div className="flex flex-wrap gap-1">
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><Package size={10} /> Feature A</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><Package size={10} /> Feature B</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs flex items-center gap-1"><Package size={10} /> Feature C</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Package size={8} /> Room Upgrade</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Package size={8} /> Spa Package</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Package size={8} /> Dining Credit</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Package size={8} /> Airport Transfer</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs flex items-center gap-1"><Package size={8} /> Late Checkout</span>
                           </div>
                         </div>
                         <div className="bg-white p-2 rounded border border-gray-200">
-                          <span className="text-xs text-brand-gray mb-1">OFFERS</span>
+                          <span className="text-2xs text-brand-gray mb-1">OFFERS</span>
                           <div className="flex flex-wrap gap-1">
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs">10% Off</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs">Free Trial</span>
-                            <span className="px-2 py-0.5 bg-gray-100 rounded text-xs">Premium</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs">20% Early Bird</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs">Bundle Discount</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs">Loyalty Points 2x</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs">Free Add-on</span>
                           </div>
                         </div>
                         <div className="bg-white p-2 rounded border border-gray-200">
-                          <span className="text-xs text-brand-gray mb-1">MESSAGE VARIATIONS</span>
+                          <span className="text-2xs text-brand-gray mb-1">MESSAGE VARIATIONS</span>
                           <div className="grid grid-cols-5 gap-1">
-                            {Array.from({ length: 10 }, (_, i) => (
-                              <span key={i} className="px-1 py-0.5 bg-gray-100 rounded text-xs text-center">M{i+1}</span>
-                            ))}
-                            <span className="px-1 py-0.5 bg-brand-gray/20 rounded text-xs text-center text-brand-gray">+10</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">Excited</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">Urgent</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">Casual</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">Formal</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">Personal</span>
+                          </div>
+                          <div className="grid grid-cols-5 gap-1 mt-1">
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">M1</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">M2</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">M3</span>
+                            <span className="px-1 py-0.5 bg-gray-100 rounded text-2xs text-center">M4</span>
+                            <span className="px-1 py-0.5 bg-[#5A5A5A]/20 rounded text-2xs text-center text-[#5A5A5A]">+15</span>
                           </div>
                         </div>
                       </div>
                     </div>
 
                     {/* Guardrails */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="h-6 w-6 rounded-full bg-brand-yellow flex items-center justify-center text-brand-black font-medium text-xs">3</div>
-                        <h4 className="font-semibold text-base flex items-center gap-1">
-                          <Settings size={16} /> Set Guardrails
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="h-5 w-5 rounded-full bg-[#5A5A5A] flex items-center justify-center text-white font-medium text-xs">3</div>
+                        <h4 className="font-semibold text-xs flex items-center gap-1">
+                          <Settings size={12} /> Set Guardrails
                         </h4>
                       </div>
-                      <div className="grid grid-cols-3 gap-2">
-                        <div className="bg-white p-2 rounded border border-gray-200 text-sm">
-                          <span className="text-xs text-brand-gray block">FREQUENCY</span>
-                          <p className="font-medium text-xs">Max 3/week</p>
+                      <div className="grid grid-cols-3 gap-1">
+                        <div className="bg-white p-1 rounded border border-gray-200 text-xs">
+                          <span className="text-2xs text-brand-gray block">FREQUENCY</span>
+                          <p className="font-medium text-2xs">Max 2/week</p>
                         </div>
-                        <div className="bg-white p-2 rounded border border-gray-200 text-sm">
-                          <span className="text-xs text-brand-gray block">BUDGET</span>
-                          <p className="font-medium text-xs">$5K max</p>
+                        <div className="bg-white p-1 rounded border border-gray-200 text-xs">
+                          <span className="text-2xs text-brand-gray block">TIMING</span>
+                          <p className="font-medium text-2xs">7 days before</p>
                         </div>
-                        <div className="bg-white p-2 rounded border border-gray-200 text-sm">
-                          <span className="text-xs text-brand-gray block">TIMING</span>
-                          <p className="font-medium text-xs">Business hrs</p>
+                        <div className="bg-white p-1 rounded border border-gray-200 text-xs">
+                          <span className="text-2xs text-brand-gray block">STOPS</span>
+                          <p className="font-medium text-2xs">At check-in</p>
                         </div>
                       </div>
                     </div>
                     
-                    <Button variant="orange" size="sm" className="w-full text-xs">Launch AI Agent</Button>
+                    <Button variant="orange" size="sm" className="w-full text-2xs">Launch AI Agent</Button>
                   </div>
                 </div>
               </div>
 
               {/* Middle Column - AI Decisioning Visualization */}
               <div className="lg:col-span-5 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-                <div className="bg-brand-orange/10 p-3 border-b border-gray-100">
-                  <h3 className="text-lg font-semibold text-brand-black">AI Decisioning in Action</h3>
+                <div className="bg-[#F6C343]/10 p-2 border-b border-gray-100">
+                  <h3 className="text-sm font-semibold text-brand-black">AI Decisioning in Action</h3>
                 </div>
-                <div className="p-4">
+                <div className="p-3">
                   {/* User Profiles */}
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {/* Customer 1 */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <div className="h-8 w-8 rounded-full bg-brand-pink/20 flex items-center justify-center">
-                            <Users className="h-4 w-4 text-brand-pink" />
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-1">
+                          <div className="h-6 w-6 rounded-full bg-[#D72660]/20 flex items-center justify-center">
+                            <Users className="h-3 w-3 text-[#D72660]" />
                           </div>
-                          <h4 className="font-semibold text-sm">Sarah K. <span className="text-xs font-normal text-brand-gray">(Early Adopter)</span></h4>
+                          <h4 className="font-semibold text-2xs">Emily R. <span className="text-2xs font-normal text-brand-gray">(Luxury Traveler)</span></h4>
                         </div>
                       </div>
                       
                       {/* Journey Steps */}
                       <div className="flex items-stretch space-x-1 mb-1">
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Bell size={12} /> Push
+                              <Mail size={8} /> Email
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 1</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Mon 9am</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Tutorial (M3)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Room Upgrade</span>
+                            <span>Formal M2</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Mail size={12} /> Email
+                              <Bell size={8} /> Push
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 3</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Wed 4pm</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Reminder (M7)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Spa Package</span>
+                            <span>Personal M8</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-green-50 p-2 rounded border border-green-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-green-50 p-1 rounded border border-green-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium text-green-700 flex items-center gap-1">
-                              <CircleCheck className="h-3 w-3" /> Goal
+                              <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded">Day 4</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Wed 5pm</span>
                           </div>
-                          <p className="text-2xs text-green-600">2 features used</p>
+                          <div className="text-2xs text-green-600 flex justify-between">
+                            <span>$350 Spa Package</span>
+                            <span>Loyalty 2x</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                     
                     {/* Customer 2 */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <div className="h-8 w-8 rounded-full bg-brand-orange/20 flex items-center justify-center">
-                            <Users className="h-4 w-4 text-brand-orange" />
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-1">
+                          <div className="h-6 w-6 rounded-full bg-[#F6C343]/20 flex items-center justify-center">
+                            <Users className="h-3 w-3 text-[#F6C343]" />
                           </div>
-                          <h4 className="font-semibold text-sm">Michael T. <span className="text-xs font-normal text-brand-gray">(Busy Professional)</span></h4>
+                          <h4 className="font-semibold text-2xs">James T. <span className="text-2xs font-normal text-brand-gray">(Business Traveler)</span></h4>
                         </div>
                       </div>
                       
                       {/* Journey Steps */}
                       <div className="flex items-stretch space-x-1">
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Mail size={12} /> Email
+                              <MessageSquare size={8} /> SMS
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 1</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Tue 7am</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Benefits (M12)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Airport Transfer</span>
+                            <span>Urgent M4</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <MessageSquare size={12} /> SMS
+                              <Mail size={8} /> Email
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 2</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Thu 6pm</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Quick tip (M15)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Late Checkout</span>
+                            <span>Formal M12</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-green-50 p-2 rounded border border-green-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-green-50 p-1 rounded border border-green-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium text-green-700 flex items-center gap-1">
-                              <CircleCheck className="h-3 w-3" /> Goal
+                              <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded">Day 5</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Fri 8am</span>
                           </div>
-                          <p className="text-2xs text-green-600">Premium activated</p>
+                          <div className="text-2xs text-green-600 flex justify-between">
+                            <span>Both Services</span>
+                            <span>Bundle Discount</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                     
                     {/* Customer 3 */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <div className="h-8 w-8 rounded-full bg-brand-pink/20 flex items-center justify-center">
-                            <Users className="h-4 w-4 text-brand-pink" />
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-1">
+                          <div className="h-6 w-6 rounded-full bg-[#5A5A5A]/20 flex items-center justify-center">
+                            <Users className="h-3 w-3 text-[#5A5A5A]" />
                           </div>
-                          <h4 className="font-semibold text-sm">David R. <span className="text-xs font-normal text-brand-gray">(Price Sensitive)</span></h4>
+                          <h4 className="font-semibold text-2xs">Sarah M. <span className="text-2xs font-normal text-brand-gray">(Family Vacation)</span></h4>
                         </div>
                       </div>
                       
                       {/* Journey Steps */}
                       <div className="flex items-stretch space-x-1">
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Mic size={12} /> Voice
+                              <Mail size={8} /> Email
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 1</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Mon 2pm</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Welcome (M1)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Dining Credit</span>
+                            <span>Excited M3</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Bell size={12} /> Push
+                              <Mic size={8} /> Voice
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 3</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Fri 5pm</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Discount (M9)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Room Upgrade</span>
+                            <span>Personal M15</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-green-50 p-2 rounded border border-green-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-green-50 p-1 rounded border border-green-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium text-green-700 flex items-center gap-1">
-                              <CircleCheck className="h-3 w-3" /> Goal
+                              <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded">Day 6</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Sat 9am</span>
                           </div>
-                          <p className="text-2xs text-green-600">Feature activated</p>
+                          <div className="text-2xs text-green-600 flex justify-between">
+                            <span>Room Upgrade</span>
+                            <span>Early Bird 20%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                     
                     {/* Customer 4 */}
-                    <div className="bg-gray-50 p-3 rounded">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <div className="h-8 w-8 rounded-full bg-brand-yellow/20 flex items-center justify-center">
-                            <Users className="h-4 w-4 text-brand-yellow" />
+                    <div className="bg-gray-50 p-2 rounded">
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-1">
+                          <div className="h-6 w-6 rounded-full bg-[#D72660]/20 flex items-center justify-center">
+                            <Users className="h-3 w-3 text-[#D72660]" />
                           </div>
-                          <h4 className="font-semibold text-sm">Emma L. <span className="text-xs font-normal text-brand-gray">(Casual User)</span></h4>
+                          <h4 className="font-semibold text-2xs">David K. <span className="text-2xs font-normal text-brand-gray">(Budget Conscious)</span></h4>
                         </div>
                       </div>
                       
                       {/* Journey Steps */}
                       <div className="flex items-stretch space-x-1">
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <MessageSquare size={12} /> SMS
+                              <Bell size={8} /> Push
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 2</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Wed 9am</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Feature (M5)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Late Checkout</span>
+                            <span>Casual M7</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-white p-2 rounded border border-gray-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-white p-1 rounded border border-gray-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium flex items-center gap-1">
-                              <Mail size={12} /> Email
+                              <MessageSquare size={8} /> SMS
                             </span>
-                            <span className="text-2xs bg-brand-yellow/20 text-brand-black px-1 rounded">Day 4</span>
+                            <span className="text-2xs bg-[#F6C343]/20 text-[#5A5A5A] px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Thu 1pm</span>
                           </div>
-                          <p className="text-2xs text-brand-gray">Social proof (M11)</p>
+                          <div className="flex justify-between text-2xs text-brand-gray">
+                            <span>Dining Credit</span>
+                            <span>Urgent M10</span>
+                          </div>
                         </div>
-                        <ArrowRight className="h-4 w-4 self-center text-gray-400" />
-                        <div className="bg-green-50 p-2 rounded border border-green-200 flex-1 flex flex-col text-xs">
-                          <div className="flex justify-between items-start mb-1">
+                        <ArrowRight className="h-3 w-3 self-center text-gray-400" />
+                        <div className="bg-green-50 p-1 rounded border border-green-200 flex-1 flex flex-col text-2xs">
+                          <div className="flex justify-between items-start">
                             <span className="font-medium text-green-700 flex items-center gap-1">
-                              <CircleCheck className="h-3 w-3" /> Goal
+                              <CircleCheck className="h-2 w-2" /> Converted
                             </span>
-                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded">Day 7</span>
+                            <span className="text-2xs bg-green-100 text-green-700 px-1 rounded flex items-center gap-0.5"><Clock size={7} /> Thu 3pm</span>
                           </div>
-                          <p className="text-2xs text-green-600">Trial upgraded</p>
+                          <div className="text-2xs text-green-600 flex justify-between">
+                            <span>Dining Credit</span>
+                            <span>Free Add-on</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -314,69 +361,69 @@ const Test = () => {
 
               {/* Right Column - Decision Explanation */}
               <div className="lg:col-span-3 bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-                <div className="bg-brand-yellow/10 p-3 border-b border-gray-100">
-                  <h3 className="text-lg font-semibold text-brand-black flex items-center gap-1">
-                    <Info size={16} /> Decision Insights
+                <div className="bg-[#5A5A5A]/10 p-2 border-b border-gray-100">
+                  <h3 className="text-sm font-semibold text-brand-black flex items-center gap-1">
+                    <Info size={12} /> Decision Insights
                   </h3>
                 </div>
-                <div className="p-3">
-                  <div className="bg-gray-50 p-2 rounded mb-3">
+                <div className="p-2">
+                  <div className="bg-gray-50 p-2 rounded mb-2">
                     <div className="flex items-center gap-1 mb-1">
-                      <div className="h-4 w-4 rounded-full bg-white border border-brand-pink flex items-center justify-center">
-                        <Info className="h-2 w-2 text-brand-pink" />
+                      <div className="h-4 w-4 rounded-full bg-white border border-[#D72660] flex items-center justify-center">
+                        <Info className="h-2 w-2 text-[#D72660]" />
                       </div>
-                      <p className="font-medium text-xs">Why Push for Sarah?</p>
+                      <p className="font-medium text-2xs">Emily R.</p>
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
-                      <li className="text-2xs text-brand-gray">92% open rate on Push</li>
-                      <li className="text-2xs text-brand-gray">Visual learning pattern</li>
-                      <li className="text-2xs text-brand-gray">Active 9am-11am daily</li>
-                      <li className="text-2xs text-brand-gray">Previous feature interest</li>
+                      <li className="text-2xs text-brand-gray">Emotional: Aspirational, status-driven</li>
+                      <li className="text-2xs text-brand-gray">Tone preference: Sophisticated, exclusive</li>
+                      <li className="text-2xs text-brand-gray">Opens emails 9am-10am (87%)</li>
+                      <li className="text-2xs text-brand-gray">Push sent after email unopened 24hrs</li>
                     </ul>
                   </div>
                   
-                  <div className="bg-gray-50 p-2 rounded mb-3">
+                  <div className="bg-gray-50 p-2 rounded mb-2">
                     <div className="flex items-center gap-1 mb-1">
-                      <div className="h-4 w-4 rounded-full bg-white border border-brand-orange flex items-center justify-center">
-                        <Info className="h-2 w-2 text-brand-orange" />
+                      <div className="h-4 w-4 rounded-full bg-white border border-[#F6C343] flex items-center justify-center">
+                        <Info className="h-2 w-2 text-[#F6C343]" />
                       </div>
-                      <p className="font-medium text-xs">Why Email for Michael?</p>
+                      <p className="font-medium text-2xs">James T.</p>
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
-                      <li className="text-2xs text-brand-gray">Morning email checking (75% open)</li>
-                      <li className="text-2xs text-brand-gray">Business profile triggers</li>
-                      <li className="text-2xs text-brand-gray">Productivity value focus</li>
-                      <li className="text-2xs text-brand-gray">Previous similar conversions</li>
+                      <li className="text-2xs text-brand-gray">Emotional: Practical, efficiency-focused</li>
+                      <li className="text-2xs text-brand-gray">Tone preference: Direct, concise</li>
+                      <li className="text-2xs text-brand-gray">High SMS response rate (92%)</li>
+                      <li className="text-2xs text-brand-gray">Email follow-up with formal details</li>
                     </ul>
                   </div>
 
-                  <div className="bg-gray-50 p-2 rounded mb-3">
+                  <div className="bg-gray-50 p-2 rounded mb-2">
                     <div className="flex items-center gap-1 mb-1">
-                      <div className="h-4 w-4 rounded-full bg-white border border-brand-pink flex items-center justify-center">
-                        <Info className="h-2 w-2 text-brand-pink" />
+                      <div className="h-4 w-4 rounded-full bg-white border border-[#5A5A5A] flex items-center justify-center">
+                        <Info className="h-2 w-2 text-[#5A5A5A]" />
                       </div>
-                      <p className="font-medium text-xs">Why Voice for David?</p>
+                      <p className="font-medium text-2xs">Sarah M.</p>
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
-                      <li className="text-2xs text-brand-gray">Low text engagement history</li>
-                      <li className="text-2xs text-brand-gray">Voice completion rate 83%</li>
-                      <li className="text-2xs text-brand-gray">Price sensitivity patterns</li>
-                      <li className="text-2xs text-brand-gray">Weekend activity profile</li>
+                      <li className="text-2xs text-brand-gray">Emotional: Family-focused, value-seeking</li>
+                      <li className="text-2xs text-brand-gray">Tone preference: Friendly, enthusiastic</li>
+                      <li className="text-2xs text-brand-gray">Room upgrade urgency created after 2PM follow-up call</li>
+                      <li className="text-2xs text-brand-gray">Voice performed 3x better than email</li>
                     </ul>
                   </div>
                   
                   <div className="bg-gray-50 p-2 rounded">
                     <div className="flex items-center gap-1 mb-1">
-                      <div className="h-4 w-4 rounded-full bg-white border border-brand-yellow flex items-center justify-center">
-                        <Info className="h-2 w-2 text-brand-yellow" />
+                      <div className="h-4 w-4 rounded-full bg-white border border-[#D72660] flex items-center justify-center">
+                        <Info className="h-2 w-2 text-[#D72660]" />
                       </div>
-                      <p className="font-medium text-xs">Why SMS for Emma?</p>
+                      <p className="font-medium text-2xs">David K.</p>
                     </div>
                     <ul className="list-disc pl-4 space-y-0.5">
-                      <li className="text-2xs text-brand-gray">88% SMS response rate</li>
-                      <li className="text-2xs text-brand-gray">Afternoon engagement peaks</li>
-                      <li className="text-2xs text-brand-gray">Responds to concise messaging</li>
-                      <li className="text-2xs text-brand-gray">Mobile-first behavior profile</li>
+                      <li className="text-2xs text-brand-gray">Emotional: Price-conscious, deal-seeking</li>
+                      <li className="text-2xs text-brand-gray">Tone preference: Casual, straightforward</li>
+                      <li className="text-2xs text-brand-gray">Push → SMS sequence when free offer available</li>
+                      <li className="text-2xs text-brand-gray">Time-limited offer created urgency</li>
                     </ul>
                   </div>
                 </div>
@@ -384,17 +431,17 @@ const Test = () => {
             </div>
 
             {/* Bottom Section - Summary/CTA */}
-            <div className="bg-gradient-to-r from-brand-pink/10 to-brand-orange/10 p-4 rounded-lg text-center">
-              <h3 className="text-xl font-bold text-brand-black mb-2">No Black Box - Full Transparency</h3>
-              <p className="text-sm text-brand-gray mb-4 max-w-3xl mx-auto">
+            <div className="bg-gradient-to-r from-[#D72660]/10 to-[#F6C343]/10 p-3 rounded-lg text-center">
+              <h3 className="text-lg font-bold text-brand-black mb-1">No Black Box - Full Transparency</h3>
+              <p className="text-xs text-brand-gray mb-3 max-w-3xl mx-auto">
                 Thoughtnudge provides complete visibility into every AI decision, 
-                optimizing for each customer like a dedicated growth expert working 24/7.
+                optimizing for each guest like a dedicated concierge working 24/7.
               </p>
               <div className="flex justify-center gap-3">
-                <Button variant="orange" size="sm">
+                <Button variant="orange" size="sm" className="text-xs">
                   Book a Demo
                 </Button>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="text-xs">
                   Learn More
                 </Button>
               </div>
