@@ -25,10 +25,10 @@ const HowItWorks = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold text-brand-black mb-6 animate-fade-in">
-                Agentic AI That Learns Each Customer Individually
+                Autonomous Growth Agents With Contextual Memory
               </h1>
               <p className="text-xl text-brand-gray mb-8 animate-fade-in [animation-delay:200ms]">
-                Thoughtnudge replaces static rules and manual optimization with autonomous agents that continuously experiment, learn, and adapt to each customer in real-time.
+                Unlike siloed systems that don't learn over time, Thoughtnudge deploys AI agents that build intelligence across all touchpoints, coordinating experiences that drive real business outcomes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in [animation-delay:400ms]">
                 <Button variant="pink" size="lg" asChild>
@@ -53,10 +53,10 @@ const HowItWorks = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-                Ready to Transform Your Customer Engagement?
+                Ready for AI That Gets Better Over Time?
               </h2>
               <p className="text-xl text-brand-gray mb-8">
-                Join innovative brands using Thoughtnudge to deliver hyper-personalized experiences that drive conversions without the manual work.
+                Join innovative brands using Thoughtnudge to deliver unified customer experiences that continuously evolve and improve with every interaction.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="pink" size="lg" asChild>

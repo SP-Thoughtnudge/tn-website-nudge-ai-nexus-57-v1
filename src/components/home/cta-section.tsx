@@ -15,10 +15,10 @@ const CtaSection = () => {
           
           <div className="relative z-10 p-12 md:p-16 flex flex-col items-center text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Transform Your Customer Experiences?
+              Ready for AI That Truly Learns?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl">
-              Join innovative brands using ThoughtNudge to deliver hyper-personalized interactions that drive conversions and build lasting customer relationships—all with minimal effort.
+              Join forward-thinking brands using Thoughtnudge's autonomous growth agents to build intelligence that unifies customer experiences across all touchpoints and delivers real business outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="pink" size="xl" className="group">

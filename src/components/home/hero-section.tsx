@@ -14,11 +14,11 @@ const HeroSection = () => {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-black leading-tight mb-6 animate-fade-in">
-            Beyond Segments: <span className="text-brand-orange">True 1:1 Decisions</span> for Every Customer
+            <span className="text-brand-orange">Autonomous Growth Agents</span> That Learn Across Every Touchpoint
           </h1>
           
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
-            ThoughtNudge's Agentic AI makes real-time decisions for each individual customer—delivering the right message, offer, and timing without rules or manual optimization.
+            Not channel-first. Not campaign-first. Customer-first. Goal-first. Thoughtnudge deploys AI agents that learn, adapt, and deliver results across all your customer interactions.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
@@ -33,26 +33,24 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Visual representation of 1:1 personalization */}
+        {/* Visual representation of autonomous agents */}
         <div className="mt-16 relative z-10">
-          {/* Container for the visualization */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden animate-scale-in">
             <div className="aspect-video bg-gray-50 relative p-4">
-              {/* This would be replaced with an actual visualization/animation */}
               <div className="absolute inset-0 flex items-center justify-center">
-                {/* Placeholder for designer - visualization showing multiple customer paths */}
                 <div className="text-center p-8 max-w-lg">
                   <p className="text-gray-500 mb-4 italic">
-                    [DESIGNER: Create a dynamic visualization showing 4-5 different customer profiles, each receiving unique 
-                    treatments across different channels with varying messages and timing. Use animation to show decisions 
-                    happening in real time, with arrows converging from data points to decisions to outcomes.]
+                    [DESIGNER: Create a visualization showing AI agents learning across multiple channels and touchpoints,
+                    with unified intelligence flowing across email, SMS, push, voice, and on-site interactions.
+                    Show the contrast between siloed channel-based systems (fragmented) vs Thoughtnudge's
+                    unified approach with customer at the center.]
                   </p>
                 </div>
               </div>
             </div>
             <div className="bg-white p-6 text-center">
               <p className="text-lg text-gray-700 font-medium">
-                Every customer receives their own unique experience—no segments, no rules, just intelligent decisions.
+                While others focus on automating channels, Thoughtnudge builds intelligence that learns across all touchpoints.
               </p>
             </div>
           </div>

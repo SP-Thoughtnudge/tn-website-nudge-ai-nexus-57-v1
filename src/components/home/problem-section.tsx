@@ -5,33 +5,33 @@ const ProblemSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-            The Problem with Traditional Personalization
+            The Broken State of Customer Engagement
           </h2>
           <p className="text-xl text-gray-600">
-            Today's marketing tools force you to create rigid rules, manual campaigns, and endless A/B tests that don't scale with your business.
+            Despite massive investments in different channels and automation technologies, customer engagement still feels robotic, broken, and siloed.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-brand-black mb-3">Rule-Based Limitations</h3>
+              <h3 className="text-xl font-bold text-brand-black mb-3">Channel-Centric Silos</h3>
               <p className="text-gray-600">
-                Static "if-this-then-that" rules can't adapt to evolving customer behavior or unexpected situations.
+                Businesses have automated channels—emails, WhatsApp, voice, SMS—individually, but customers don't experience your brand in silos.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-brand-black mb-3">Manual Campaign Creation</h3>
+              <h3 className="text-xl font-bold text-brand-black mb-3">Automation Without Intelligence</h3>
               <p className="text-gray-600">
-                Building separate journeys for each segment is time-consuming and impossible to scale to truly 1:1 personalization.
+                Most platforms automate messaging, not intelligence. They don't truly learn what works for each customer across touchpoints.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-brand-black mb-3">A/B Testing Fatigue</h3>
+              <h3 className="text-xl font-bold text-brand-black mb-3">No Evolution Over Time</h3>
               <p className="text-gray-600">
-                Running tests for every variant and segment creates analysis paralysis and can't optimize for long-term customer value.
+                Even new LLM-based agents are reactive—stuck in one channel, lacking persistent context and continuous intelligence that evolves.
               </p>
             </div>
           </div>
@@ -40,10 +40,10 @@ const ProblemSection = () => {
             <div className="absolute -z-10 inset-0 bg-gradient-to-br from-brand-yellow/30 to-brand-pink/20 rounded-full blur-3xl"></div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
               <h3 className="text-2xl font-bold text-brand-black mb-6">
-                What if your AI could make these decisions autonomously?
+                What if AI could unify customer intelligence across every touchpoint?
               </h3>
               <p className="text-gray-600 mb-6">
-                Thoughtnudge is the AI brain behind every customer decision, replacing rigid rules with a system that learns and adapts to each individual in real-time.
+                Thoughtnudge deploys autonomous growth agents that learn, optimize, and adapt across all customer interactions—not channel-first, not campaign-first, but customer-first and goal-first.
               </p>
               <div className="flex justify-center">
                 <img

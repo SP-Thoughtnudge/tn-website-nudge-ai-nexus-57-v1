@@ -11,10 +11,10 @@ const AutonomousSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-            Autonomous Execution, Minimal Effort
+            Intelligence That Evolves, Not Just Automates
           </h2>
           <p className="text-xl text-gray-600">
-            Set your goals and guardrails once, then let ThoughtNudge's Agentic AI handle everything else—no manual optimization required.
+            Unlike reactive AI systems that don't improve over time, ThoughtNudge agents build contextual memory and continuously evolve with every customer interaction.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ const AutonomousSection = () => {
         <div className="bg-white rounded-xl shadow-md p-8 mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-brand-black mb-6">From Manual to Autonomous</h3>
+              <h3 className="text-2xl font-bold text-brand-black mb-6">What's Holding Back Your Customer Engagement?</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -32,8 +32,8 @@ const AutonomousSection = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-800">No More Building Complex Rules</p>
-                    <p className="text-gray-600 mt-1">Stop creating endless if-then rules that quickly become unmanageable.</p>
+                    <p className="font-medium text-gray-800">Siloed Channel Technologies</p>
+                    <p className="text-gray-600 mt-1">Your email platform doesn't know what happened on WhatsApp, and your SMS system ignores web behavior.</p>
                   </div>
                 </div>
                 
@@ -44,8 +44,8 @@ const AutonomousSection = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-800">No More A/B Testing Fatigue</p>
-                    <p className="text-gray-600 mt-1">Eliminate time-consuming testing across multiple segments and variations.</p>
+                    <p className="font-medium text-gray-800">Reactive Messaging Without Memory</p>
+                    <p className="text-gray-600 mt-1">Even LLM-based agents are reactive—stuck in one channel, lacking persistent context across interactions.</p>
                   </div>
                 </div>
                 
@@ -56,8 +56,8 @@ const AutonomousSection = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-800">No More Campaign Creation Burnout</p>
-                    <p className="text-gray-600 mt-1">Stop building separate campaigns for every segment and scenario.</p>
+                    <p className="font-medium text-gray-800">No Evolution Over Time</p>
+                    <p className="text-gray-600 mt-1">Systems that don't improve with each interaction, missing the opportunity to build intelligence that gets better.</p>
                   </div>
                 </div>
               </div>
@@ -67,13 +67,13 @@ const AutonomousSection = () => {
               {/* Designer placeholder for autonomous execution visualization */}
               <div className="text-center p-4 border border-dashed border-gray-300 rounded-lg">
                 <p className="text-gray-500 italic mb-4">
-                  [DESIGNER: Create a visualization showing the autonomous execution cycle:
-                  1. Marketers set goals and action spaces (content, offers, channels)
-                  2. AI makes decisions in real-time for each customer 
-                  3. Results feed back into the system
-                  4. System continuously improves]
+                  [DESIGNER: Create a visualization showing the evolution of intelligence:
+                  1. Customer interactions across multiple channels
+                  2. Thoughtnudge agents learning from every interaction
+                  3. Building contextual memory over time
+                  4. Intelligence that grows stronger with each engagement]
                 </p>
-                <p className="text-gray-600">Show how marketers only need to define what's possible, then the AI handles everything else.</p>
+                <p className="text-gray-600">Show how our agents build unified intelligence that learns across all touchpoints, not just isolated channels.</p>
               </div>
             </div>
           </div>
@@ -83,40 +83,40 @@ const AutonomousSection = () => {
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <Zap className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-xl font-bold text-brand-black mb-4">
-              Set It, Don't Forget It
+              Acts On First-Party Data
             </h3>
             <p className="text-gray-600">
-              Define your goals and guardrails once, then let the AI handle the rest. No constant monitoring required.
+              Our agents integrate all your customer data to build a comprehensive understanding that informs every decision.
             </p>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <BrainCircuit className="w-12 h-12 text-brand-pink mb-6" />
             <h3 className="text-xl font-bold text-brand-black mb-4">
-              Customer-Offer Fit
+              Learns What Works For Each User
             </h3>
             <p className="text-gray-600">
-              Our AI identifies which offer will resonate most with each customer based on their unique behaviors and preferences.
+              Beyond segments, our agents understand individual preferences, behaviors, and responses to optimize engagement.
             </p>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <BarChart className="w-12 h-12 text-brand-yellow mb-6" />
             <h3 className="text-xl font-bold text-brand-black mb-4">
-              Channel Optimization
+              Coordinates Across Channels
             </h3>
             <p className="text-gray-600">
-              Automatically selects the perfect channel, timing, and frequency for each customer to maximize engagement.
+              With contextual intelligence, our agents deliver coherent experiences across all touchpoints, not fragmented messages.
             </p>
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <Compass className="w-12 h-12 text-brand-orange mb-6" />
             <h3 className="text-xl font-bold text-brand-black mb-4">
-              Message Resonance
+              Evolves With Contextual Memory
             </h3>
             <p className="text-gray-600">
-              Delivers perfectly matched messaging that speaks to each customer's emotional and psychographic profile.
+              Unlike one-off interactions, our agents build persistent memory that makes them smarter with every customer engagement.
             </p>
           </div>
         </div>

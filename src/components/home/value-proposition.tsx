@@ -25,10 +25,10 @@ const ValueProposition = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-            1:1 Decisions Mean Higher Conversions
+            Beyond Siloed Automation
           </h2>
           <p className="text-xl text-gray-600">
-            While others claim to personalize, we make unique decisions for each customer in real-time—across all touchpoints.
+            Customers don't experience your brand in silos. Why is your customer engagement still fragmented?
           </p>
         </div>
         
@@ -38,19 +38,19 @@ const ValueProposition = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="w-full md:w-2/5">
                 <div className="bg-gray-100 p-6 rounded-lg">
-                  <h3 className="text-xl font-medium text-gray-800 mb-4">The Old Way: Segments & Rules</h3>
+                  <h3 className="text-xl font-medium text-gray-800 mb-4">Today's Broken Approach</h3>
                   <div className="space-y-3">
                     <div className="flex items-center bg-white p-3 rounded shadow-sm">
                       <div className="w-3 h-3 bg-gray-400 rounded-full mr-3"></div>
-                      <p className="text-gray-600">Static segments that don't adapt</p>
+                      <p className="text-gray-600">Channel-centric, siloed systems</p>
                     </div>
                     <div className="flex items-center bg-white p-3 rounded shadow-sm">
                       <div className="w-3 h-3 bg-gray-400 rounded-full mr-3"></div>
-                      <p className="text-gray-600">Manual A/B testing with limited variants</p>
+                      <p className="text-gray-600">Rules-based, reactive messaging</p>
                     </div>
                     <div className="flex items-center bg-white p-3 rounded shadow-sm">
                       <div className="w-3 h-3 bg-gray-400 rounded-full mr-3"></div>
-                      <p className="text-gray-600">Rigid journeys that break easily</p>
+                      <p className="text-gray-600">No memory, no evolution over time</p>
                     </div>
                   </div>
                 </div>
@@ -67,19 +67,19 @@ const ValueProposition = () => {
               
               <div className="w-full md:w-2/5">
                 <div className="bg-brand-orange/10 p-6 rounded-lg border-l-4 border-brand-orange">
-                  <h3 className="text-xl font-medium text-gray-800 mb-4">ThoughtNudge: 1:1 Intelligence</h3>
+                  <h3 className="text-xl font-medium text-gray-800 mb-4">ThoughtNudge: Autonomous Intelligence</h3>
                   <div className="space-y-3">
                     <div className="flex items-center bg-white p-3 rounded shadow-sm">
                       <div className="w-3 h-3 bg-brand-orange rounded-full mr-3"></div>
-                      <p className="text-gray-600">Unique decisions for each customer</p>
+                      <p className="text-gray-600">Customer-first, goal-first approach</p>
                     </div>
                     <div className="flex items-center bg-white p-3 rounded shadow-sm">
                       <div className="w-3 h-3 bg-brand-orange rounded-full mr-3"></div>
-                      <p className="text-gray-600">Continuous learning and adaptation</p>
+                      <p className="text-gray-600">Cross-channel contextual intelligence</p>
                     </div>
                     <div className="flex items-center bg-white p-3 rounded shadow-sm">
                       <div className="w-3 h-3 bg-brand-orange rounded-full mr-3"></div>
-                      <p className="text-gray-600">Dynamic journeys that evolve in real-time</p>
+                      <p className="text-gray-600">Persistent memory that evolves over time</p>
                     </div>
                   </div>
                 </div>
@@ -92,18 +92,18 @@ const ValueProposition = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <ValueCard 
             icon={BrainCircuit}
-            title="Cross-Channel Learning"
-            description="Our AI learns from every interaction across all channels—email, SMS, push, on-site—creating a unified understanding of each customer's preferences."
+            title="Contextual Intelligence"
+            description="Our agents learn from every interaction across all touchpoints, building a unified understanding that grows stronger with each customer engagement."
           />
           <ValueCard 
             icon={Target}
-            title="Perfect Match Delivery"
-            description="Automatically delivers the right message, offer, channel, timing, frequency and sequence tailored to each individual customer."
+            title="Autonomous Optimization"
+            description="Acting on first-party data, our agents continuously learn what works for each individual user, improving their approach with every interaction."
           />
           <ValueCard 
             icon={TrendingUp}
-            title="Conversion Focused"
-            description="With true 1:1 decisions, customers receive exactly what resonates with them, resulting in significantly higher engagement and conversion rates."
+            title="Goal-First Results"
+            description="Set your business goals, and our agents coordinate messaging across channels to deliver higher conversions autonomously, not just automated messages."
           />
         </div>
       </div>
