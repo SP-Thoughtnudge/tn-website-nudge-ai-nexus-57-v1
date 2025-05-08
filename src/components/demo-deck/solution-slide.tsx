@@ -2,7 +2,7 @@
 import React from "react";
 import { 
   Users, Brain, Zap, MessageSquare, Mail, Bell, Mic, 
-  Infinity, Settings, Shield, CircleCheck 
+  Infinity, Shield, Check 
 } from "lucide-react";
 
 const SolutionSlide = () => {
@@ -12,229 +12,114 @@ const SolutionSlide = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-brand-black mb-2">
-              Thoughtnudge: Agentic AI That Delivers Outcomes
+              Thoughtnudge: AI Agents That Drive Results
             </h2>
-            <p className="text-sm text-gray-600 max-w-3xl mx-auto">
-              You set the goals and guardrails. Our AI agents deliver the results.
+            <p className="text-sm text-gray-600 max-w-3xl mx-auto mb-2">
+              Set your business goals. Our AI agents deliver the outcomes.
             </p>
           </div>
           
-          {/* Main Content Grid */}
-          <div className="grid grid-cols-2 gap-5 mb-6">
-            {/* Left Column - Key Features */}
-            <div className="space-y-5">
-              {/* 1:1 Decision */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#9b87f5]/20 flex items-center justify-center flex-shrink-0">
-                    <Brain className="h-6 w-6 text-[#9b87f5]" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-brand-black mb-1">1:1 Real-time Decisioning</h3>
-                    <p className="text-xs text-gray-600 mb-2">
-                      One dedicated AI agent per customer that learns and adapts in real-time
-                    </p>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-gray-50 p-2 rounded">
-                        <h4 className="text-xs font-semibold mb-1 flex items-center gap-1">
-                          <MessageSquare className="h-3 w-3" /> Smart Decisions
-                        </h4>
-                        <ul className="text-2xs text-gray-600 space-y-0.5 pl-3">
-                          <li className="list-disc">Right message</li>
-                          <li className="list-disc">Right offer</li>
-                          <li className="list-disc">Right channel</li>
-                          <li className="list-disc">Right timing</li>
-                        </ul>
-                      </div>
-                      <div className="bg-gray-50 p-2 rounded">
-                        <h4 className="text-xs font-semibold mb-1 flex items-center gap-1">
-                          <Users className="h-3 w-3" /> Customer Signals
-                        </h4>
-                        <ul className="text-2xs text-gray-600 space-y-0.5 pl-3">
-                          <li className="list-disc">Behavior patterns</li>
-                          <li className="list-disc">Response data</li>
-                          <li className="list-disc">Interaction history</li>
-                          <li className="list-disc">Psychographic profile</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Autonomous Execution */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#F97316]/20 flex items-center justify-center flex-shrink-0">
-                    <Zap className="h-6 w-6 text-[#F97316]" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-brand-black mb-1">Autonomous Execution</h3>
-                    <p className="text-xs text-gray-600 mb-2">
-                      AI operates autonomously to achieve your business objectives
-                    </p>
-                    
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="bg-gray-50 p-2 rounded">
-                        <h4 className="text-xs font-semibold mb-1">Traditional Approach</h4>
-                        <ul className="text-2xs text-gray-600 space-y-0.5 pl-3">
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-red-500" /> Static rules
-                          </li>
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-red-500" /> Predefined journeys
-                          </li>
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-red-500" /> Manual A/B tests
-                          </li>
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-red-500" /> Static segmentation
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="bg-[#F97316]/10 p-2 rounded">
-                        <h4 className="text-xs font-semibold mb-1">Thoughtnudge Way</h4>
-                        <ul className="text-2xs text-gray-600 space-y-0.5 pl-3">
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-green-500" /> Goal-based AI
-                          </li>
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-green-500" /> Dynamic adaptation
-                          </li>
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-green-500" /> Continuous learning
-                          </li>
-                          <li className="flex items-center gap-1">
-                            <CircleCheck className="h-2 w-2 text-green-500" /> Individual optimization
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right Column */}
-            <div className="space-y-5">
-              {/* Cross-Channel Intelligence */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#0EA5E9]/20 flex items-center justify-center flex-shrink-0">
-                    <MessageSquare className="h-6 w-6 text-[#0EA5E9]" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-brand-black mb-1">Unified Cross-Channel Intelligence</h3>
-                    <p className="text-xs text-gray-600 mb-2">
-                      Holistic view of customer behavior across all touchpoints
-                    </p>
-                    
-                    <div className="bg-[#0EA5E9]/5 p-2 rounded mb-2">
-                      <h4 className="text-xs font-semibold mb-1">Channel Integration</h4>
-                      <div className="flex flex-wrap gap-2">
-                        <div className="px-2 py-1 bg-white rounded-full shadow-sm flex items-center gap-1">
-                          <Mail className="h-3 w-3 text-[#0EA5E9]" />
-                          <span className="text-2xs">Email</span>
-                        </div>
-                        <div className="px-2 py-1 bg-white rounded-full shadow-sm flex items-center gap-1">
-                          <MessageSquare className="h-3 w-3 text-[#0EA5E9]" />
-                          <span className="text-2xs">SMS</span>
-                        </div>
-                        <div className="px-2 py-1 bg-white rounded-full shadow-sm flex items-center gap-1">
-                          <Bell className="h-3 w-3 text-[#0EA5E9]" />
-                          <span className="text-2xs">Push</span>
-                        </div>
-                        <div className="px-2 py-1 bg-white rounded-full shadow-sm flex items-center gap-1">
-                          <Mic className="h-3 w-3 text-[#0EA5E9]" />
-                          <span className="text-2xs">Voice</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-gray-50 p-2 rounded">
-                      <h4 className="text-xs font-semibold mb-1">Learning Across Channels:</h4>
-                      <p className="text-2xs text-gray-600">
-                        AI synthesizes signals from all channels to create a unified customer understanding,
-                        applying insights from one channel to optimize others.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Continuous Intelligence */}
-              <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-12 w-12 rounded-full bg-[#D946EF]/20 flex items-center justify-center flex-shrink-0">
-                    <Infinity className="h-6 w-6 text-[#D946EF]" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-brand-black mb-1">Continuous Intelligence</h3>
-                    <p className="text-xs text-gray-600 mb-2">
-                      AI that constantly learns and improves with every interaction
-                    </p>
-                    
-                    <div className="bg-gray-50 p-2 rounded flex items-start gap-2">
-                      <div className="flex-1">
-                        <h4 className="text-xs font-semibold mb-1">Learning Loop</h4>
-                        <ul className="text-2xs text-gray-600 space-y-0.5 pl-3">
-                          <li className="list-disc">Collect signals</li>
-                          <li className="list-disc">Analyze patterns</li>
-                          <li className="list-disc">Test hypotheses</li>
-                          <li className="list-disc">Implement insights</li>
-                        </ul>
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-xs font-semibold mb-1">Always Improving</h4>
-                        <p className="text-2xs text-gray-600">
-                          Unlike static systems, our AI agents evolve with each customer
-                          interaction, becoming more effective over time.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Bottom Row - Control & Transparency */}
-          <div className="bg-gradient-to-r from-[#9b87f5]/10 to-[#F97316]/10 p-4 rounded-lg mb-3">
-            <div className="flex items-center gap-4">
-              <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
-                <Shield className="h-6 w-6 text-[#403E43]" />
+          {/* Value Proposition */}
+          <div className="bg-gradient-to-r from-[#9b87f5]/10 to-[#F97316]/10 p-6 rounded-xl mb-8">
+            <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+              <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                <Brain className="h-8 w-8 text-[#9b87f5]" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-brand-black">You're Always in Control</h3>
-                <p className="text-xs text-gray-600 mb-2">
-                  Explainable AI with complete transparency and control
-                </p>
-                
-                <div className="flex gap-4">
-                  <div className="bg-white p-2 rounded shadow-sm flex-1">
-                    <h4 className="text-xs font-semibold flex items-center gap-1 mb-1">
-                      <Settings className="h-3 w-3" /> Set Guardrails
-                    </h4>
-                    <p className="text-2xs text-gray-600">
-                      Define parameters for frequency, timing, tone, and message content
-                    </p>
-                  </div>
-                  <div className="bg-white p-2 rounded shadow-sm flex-1">
-                    <h4 className="text-xs font-semibold flex items-center gap-1 mb-1">
-                      <Brain className="h-3 w-3" /> Full Transparency
-                    </h4>
-                    <p className="text-2xs text-gray-600">
-                      See exactly why each decision was made with complete audit trails
-                    </p>
-                  </div>
+                <h3 className="text-xl font-bold text-brand-black mb-2">Thoughtnudge eliminates:</h3>
+                <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                  <div className="px-3 py-1 bg-white rounded-full shadow-sm text-xs">Manual campaigns</div>
+                  <div className="px-3 py-1 bg-white rounded-full shadow-sm text-xs">Static rules</div>
+                  <div className="px-3 py-1 bg-white rounded-full shadow-sm text-xs">Complex A/B testing</div>
+                  <div className="px-3 py-1 bg-white rounded-full shadow-sm text-xs">Manual optimization</div>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Key Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            {/* 1:1 Decision */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-5 hover:shadow-md transition-all">
+              <div className="flex items-start gap-3 mb-3">
+                <div className="h-10 w-10 rounded-full bg-[#9b87f5]/20 flex items-center justify-center flex-shrink-0">
+                  <Users className="h-5 w-5 text-[#9b87f5]" />
+                </div>
+                <h3 className="text-lg font-bold text-brand-black">1:1 AI Agents</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                One dedicated AI agent per customer that learns and adapts to deliver personalized experiences at scale.
+              </p>
+            </div>
+            
+            {/* Autonomous Execution */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-5 hover:shadow-md transition-all">
+              <div className="flex items-start gap-3 mb-3">
+                <div className="h-10 w-10 rounded-full bg-[#F97316]/20 flex items-center justify-center flex-shrink-0">
+                  <Zap className="h-5 w-5 text-[#F97316]" />
+                </div>
+                <h3 className="text-lg font-bold text-brand-black">Autonomous Execution</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                Set your goals and let AI handle the rest — no rules, no journeys, just results that continuously improve.
+              </p>
+            </div>
+            
+            {/* Cross-Channel Intelligence */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-5 hover:shadow-md transition-all">
+              <div className="flex items-start gap-3 mb-3">
+                <div className="h-10 w-10 rounded-full bg-[#0EA5E9]/20 flex items-center justify-center flex-shrink-0">
+                  <MessageSquare className="h-5 w-5 text-[#0EA5E9]" />
+                </div>
+                <h3 className="text-lg font-bold text-brand-black">Cross-Channel Intelligence</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                Unified insights across all touchpoints, optimizing the right channel, message, and timing for each customer.
+              </p>
+            </div>
+          </div>
           
-          <div className="text-center">
-            <p className="text-xs font-semibold text-brand-black">
-              Set your business goals. Our agentic AI does the rest.
+          {/* Results Section */}
+          <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 mb-8">
+            <h3 className="text-lg font-bold text-brand-black mb-3 text-center">Real Business Impact</h3>
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="bg-[#9b87f5]/10 p-4 rounded">
+                <p className="text-2xl font-bold text-[#9b87f5]">2.4x</p>
+                <p className="text-xs text-gray-600">Higher Conversions</p>
+              </div>
+              <div className="bg-[#F97316]/10 p-4 rounded">
+                <p className="text-2xl font-bold text-[#F97316]">60%</p>
+                <p className="text-xs text-gray-600">Less Manual Work</p>
+              </div>
+              <div className="bg-[#0EA5E9]/10 p-4 rounded">
+                <p className="text-2xl font-bold text-[#0EA5E9]">93%</p>
+                <p className="text-xs text-gray-600">Customer Satisfaction</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Control & Transparency */}
+          <div className="bg-white rounded-lg border border-gray-100 p-5 flex items-center gap-4">
+            <div className="h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
+              <Shield className="h-6 w-6 text-gray-700" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h3 className="text-lg font-bold text-brand-black">Always in Control</h3>
+                <div className="flex items-center bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded">
+                  <Check className="h-3 w-3 mr-1" />
+                  Explainable AI
+                </div>
+              </div>
+              <p className="text-sm text-gray-600">
+                Complete transparency with guardrails you define. You set the parameters, our AI drives the results.
+              </p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-6">
+            <p className="text-sm font-semibold text-[#9b87f5]">
+              Transform your customer engagement with AI that delivers outcomes
             </p>
           </div>
         </div>
