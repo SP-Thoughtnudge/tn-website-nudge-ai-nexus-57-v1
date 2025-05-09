@@ -58,7 +58,7 @@ const TelecomBrochure = () => {
           </div>
         </section>
 
-        {/* Key Use Cases Section */}
+        {/* Key Use Cases Section - Optimized layout */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
@@ -71,174 +71,138 @@ const TelecomBrochure = () => {
                 </p>
               </div>
               
-              {/* Grid of Use Cases - 2 columns on larger screens */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Use Cases - Card Grid Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Use Case 1 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-brand-pink">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-brand-pink/20 rounded-full flex items-center justify-center">
-                        <Users className="w-6 h-6 text-brand-pink" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-brand-pink/10 rounded-full flex items-center justify-center shrink-0">
+                        <Users className="w-5 h-5 text-brand-pink" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Increase ARPU via Intelligent Upsell & Cross-Sell</h3>
-                        <p className="text-sm font-medium text-brand-pink">Goal: Maximize wallet share per customer</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Increase ARPU via Intelligent Upsell & Cross-Sell</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-pink" />
-                          </div>
-                          <span className="text-sm">AI agents analyze behavioral signals and usage patterns to recommend the right add-ons</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-pink" />
-                          </div>
-                          <span className="text-sm">Test and learn most effective product mix, timing, and message variants</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-brand-pink">Higher ARPU and lower cost-per-conversion</span></p>
-                      </div>
+                    <p className="text-sm text-brand-pink font-medium mb-3">Goal: Maximize wallet share per customer</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-pink mt-0.5 shrink-0" />
+                        <span>AI agents analyze behavioral signals and usage patterns to recommend the right add-ons</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-pink mt-0.5 shrink-0" />
+                        <span>Test and learn most effective product mix, timing, and message variants</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-brand-pink">Higher ARPU and lower cost-per-conversion</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Use Case 2 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-brand-orange">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-brand-orange/20 rounded-full flex items-center justify-center">
-                        <Phone className="w-6 h-6 text-brand-orange" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center shrink-0">
+                        <Phone className="w-5 h-5 text-brand-orange" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Optimize Plan Offers for ARPU Growth</h3>
-                        <p className="text-sm font-medium text-brand-orange">Goal: Maximize yield from existing customers</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Optimize Plan Offers for ARPU Growth</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-orange" />
-                          </div>
-                          <span className="text-sm">Agents learn what plan and price point optimizes both adoption and stickiness</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-orange" />
-                          </div>
-                          <span className="text-sm">Personalize upgrades with real-time context (data usage spike, speed complaints)</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-brand-orange">Profitable plan migration, improved retention</span></p>
-                      </div>
+                    <p className="text-sm text-brand-orange font-medium mb-3">Goal: Maximize yield from existing customers</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-orange mt-0.5 shrink-0" />
+                        <span>Agents learn what plan and price point optimizes both adoption and stickiness</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-orange mt-0.5 shrink-0" />
+                        <span>Personalize upgrades with real-time context (data usage spike, speed complaints)</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-brand-orange">Profitable plan migration, improved retention</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Use Case 3 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-yellow-600">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-brand-yellow/20 rounded-full flex items-center justify-center">
-                        <MessageSquare className="w-6 h-6 text-yellow-600" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center shrink-0">
+                        <MessageSquare className="w-5 h-5 text-yellow-600" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Personalized Winback of Churned Users</h3>
-                        <p className="text-sm font-medium text-yellow-600">Goal: Recover lost users with minimal cost</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Personalized Winback of Churned Users</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-yellow-600" />
-                          </div>
-                          <span className="text-sm">AI agents segment churned users by behavioral and psychographic drivers</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-yellow-600" />
-                          </div>
-                          <span className="text-sm">Deliver hyper-personalized re-engagement journeys with best-fit offers</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-yellow-600">Higher winback rates with lower CAC</span></p>
-                      </div>
+                    <p className="text-sm text-yellow-600 font-medium mb-3">Goal: Recover lost users with minimal cost</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-yellow-600 mt-0.5 shrink-0" />
+                        <span>AI agents segment churned users by behavioral and psychographic drivers</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-yellow-600 mt-0.5 shrink-0" />
+                        <span>Deliver hyper-personalized re-engagement journeys with best-fit offers</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-yellow-600">Higher winback rates with lower CAC</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Use Case 4 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-green-600">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                        <ShieldCheck className="w-6 h-6 text-green-600" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-green-500/10 rounded-full flex items-center justify-center shrink-0">
+                        <ShieldCheck className="w-5 h-5 text-green-600" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">At-Risk Customer Retention</h3>
-                        <p className="text-sm font-medium text-green-600">Goal: Reduce churn from at-risk users</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">At-Risk Customer Retention</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-green-600" />
-                          </div>
-                          <span className="text-sm">Agents determine the most effective retention strategy for each individual</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-green-600" />
-                          </div>
-                          <span className="text-sm">Select optimal incentive, message, channel, and timing for each user</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-green-600">Higher save rates, reduced churn</span></p>
-                      </div>
+                    <p className="text-sm text-green-600 font-medium mb-3">Goal: Reduce churn from at-risk users</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+                        <span>Agents determine the most effective retention strategy for each individual</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+                        <span>Select optimal incentive, message, channel, and timing for each user</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-green-600">Higher save rates, reduced churn</span></p>
                     </div>
                   </div>
                 </div>
 
-                {/* Use Case 5 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full md:col-span-2">
-                  <div className="p-6 border-l-4 border-blue-600">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                        <Zap className="w-6 h-6 text-blue-600" />
+                {/* Use Case 5 - Full width on mobile, same width on desktop */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden md:col-span-2">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center shrink-0">
+                        <Zap className="w-5 h-5 text-blue-600" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Optimize Renewals & Upgrades with Adaptive Incentives</h3>
-                        <p className="text-sm font-medium text-blue-600">Goal: Maximize conversions at key contract points</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Optimize Renewals & Upgrades with Adaptive Incentives</h3>
                     </div>
-                    <div className="space-y-3">
+                    <p className="text-sm text-blue-600 font-medium mb-3">Goal: Maximize conversions at key contract points</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-blue-600" />
-                          </div>
-                          <span className="text-sm">Agents evaluate contextual history to determine which incentive drives renewals</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-blue-600" />
-                          </div>
-                          <span className="text-sm">Adjust messaging and timing in real-time based on user behavior</span>
+                        <li className="flex items-start gap-2 text-sm text-gray-700">
+                          <Check className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+                          <span>Agents evaluate contextual history to determine which incentive drives renewals</span>
                         </li>
                       </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-blue-600">Higher renewal rates, lower incentive wastage</span></p>
-                      </div>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2 text-sm text-gray-700">
+                          <Check className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+                          <span>Adjust messaging and timing in real-time based on user behavior</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md mt-4">
+                      <p className="text-sm font-medium">Outcome: <span className="text-blue-600">Higher renewal rates, lower incentive wastage</span></p>
                     </div>
                   </div>
                 </div>
@@ -246,7 +210,7 @@ const TelecomBrochure = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Impact Metrics */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">

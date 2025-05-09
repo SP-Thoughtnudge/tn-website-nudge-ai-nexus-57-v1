@@ -58,7 +58,7 @@ const EcommerceBrochure = () => {
           </div>
         </section>
 
-        {/* Key Use Cases Section */}
+        {/* Key Use Cases Section - Optimized Layout */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
@@ -71,174 +71,138 @@ const EcommerceBrochure = () => {
                 </p>
               </div>
               
-              {/* Grid of Use Cases - 2 columns on larger screens */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Use Cases - Card Grid Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Use Case 1 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-brand-orange">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-brand-orange/20 rounded-full flex items-center justify-center">
-                        <ShoppingCart className="w-6 h-6 text-brand-orange" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center shrink-0">
+                        <ShoppingCart className="w-5 h-5 text-brand-orange" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Reduce Cart Abandonment</h3>
-                        <p className="text-sm font-medium text-brand-orange">Goal: Convert abandoned carts into sales</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Reduce Cart Abandonment</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-orange" />
-                          </div>
-                          <span className="text-sm">Personalized, behaviorally triggered nudges across email, SMS, WhatsApp</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-orange" />
-                          </div>
-                          <span className="text-sm">Dynamic content and psychographic-specific incentives to maximize conversion</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-brand-orange">Better recovery rates and incremental revenue</span></p>
-                      </div>
+                    <p className="text-sm text-brand-orange font-medium mb-3">Goal: Convert abandoned carts into sales</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-orange mt-0.5 shrink-0" />
+                        <span>Personalized, behaviorally triggered nudges across email, SMS, WhatsApp</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-orange mt-0.5 shrink-0" />
+                        <span>Dynamic content and psychographic-specific incentives to maximize conversion</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-brand-orange">Better recovery rates and incremental revenue</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Use Case 2 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-brand-pink">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-brand-pink/20 rounded-full flex items-center justify-center">
-                        <TrendingUp className="w-6 h-6 text-brand-pink" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-brand-pink/10 rounded-full flex items-center justify-center shrink-0">
+                        <TrendingUp className="w-5 h-5 text-brand-pink" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Optimize Paid Media Retargeting</h3>
-                        <p className="text-sm font-medium text-brand-pink">Goal: Maximize advertising ROAS</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Optimize Paid Media Retargeting</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-pink" />
-                          </div>
-                          <span className="text-sm">Deliver highly personalized, goal-oriented messages to re-engage site visitors</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-brand-pink" />
-                          </div>
-                          <span className="text-sm">Dynamically select message, channel, offer, and timing for each customer</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-brand-pink">Higher conversion rates on retargeting campaigns</span></p>
-                      </div>
+                    <p className="text-sm text-brand-pink font-medium mb-3">Goal: Maximize advertising ROAS</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-pink mt-0.5 shrink-0" />
+                        <span>Deliver highly personalized, goal-oriented messages to re-engage site visitors</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-brand-pink mt-0.5 shrink-0" />
+                        <span>Dynamically select message, channel, offer, and timing for each customer</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-brand-pink">Higher conversion rates on retargeting campaigns</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Use Case 3 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-yellow-600">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-brand-yellow/20 rounded-full flex items-center justify-center">
-                        <Users className="w-6 h-6 text-yellow-600" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center shrink-0">
+                        <Users className="w-5 h-5 text-yellow-600" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Target Offers to Loyalty Program Members</h3>
-                        <p className="text-sm font-medium text-yellow-600">Goal: Maximize loyalty member value</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Target Offers to Loyalty Program Members</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-yellow-600" />
-                          </div>
-                          <span className="text-sm">Drive higher lifetime value with contextually relevant rewards and offers</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-yellow-600" />
-                          </div>
-                          <span className="text-sm">Encourage loyalty tier upgrades and strategic reward redemption</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-yellow-600">Increased program engagement and customer retention</span></p>
-                      </div>
+                    <p className="text-sm text-yellow-600 font-medium mb-3">Goal: Maximize loyalty member value</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-yellow-600 mt-0.5 shrink-0" />
+                        <span>Drive higher lifetime value with contextually relevant rewards and offers</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-yellow-600 mt-0.5 shrink-0" />
+                        <span>Encourage loyalty tier upgrades and strategic reward redemption</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-yellow-600">Increased program engagement and customer retention</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Use Case 4 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full">
-                  <div className="p-6 border-l-4 border-green-600">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                        <Zap className="w-6 h-6 text-green-600" />
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-green-500/10 rounded-full flex items-center justify-center shrink-0">
+                        <Zap className="w-5 h-5 text-green-600" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Increase Repurchase Frequency</h3>
-                        <p className="text-sm font-medium text-green-600">Goal: Boost repeat purchase rate</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Increase Repurchase Frequency</h3>
                     </div>
-                    <div className="space-y-3">
-                      <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-green-600" />
-                          </div>
-                          <span className="text-sm">Identify optimal moments to re-engage past buyers with relevant products</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-green-600" />
-                          </div>
-                          <span className="text-sm">Use contextual triggers instead of blanket offers to avoid discount fatigue</span>
-                        </li>
-                      </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-green-600">Higher repeat purchase rates at better margins</span></p>
-                      </div>
+                    <p className="text-sm text-green-600 font-medium mb-3">Goal: Boost repeat purchase rate</p>
+                    <ul className="space-y-2 mb-4">
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+                        <span>Identify optimal moments to re-engage past buyers with relevant products</span>
+                      </li>
+                      <li className="flex items-start gap-2 text-sm text-gray-700">
+                        <Check className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+                        <span>Use contextual triggers instead of blanket offers to avoid discount fatigue</span>
+                      </li>
+                    </ul>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md">
+                      <p className="text-sm font-medium">Outcome: <span className="text-green-600">Higher repeat purchase rates at better margins</span></p>
                     </div>
                   </div>
                 </div>
 
-                {/* Use Case 5 */}
-                <div className="bg-white rounded-xl shadow-md overflow-hidden h-full md:col-span-2">
-                  <div className="p-6 border-l-4 border-blue-600">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                        <MessageSquare className="w-6 h-6 text-blue-600" />
+                {/* Use Case 5 - Full width on mobile, same width on desktop */}
+                <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 overflow-hidden md:col-span-2">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center shrink-0">
+                        <MessageSquare className="w-5 h-5 text-blue-600" />
                       </div>
-                      <div className="ml-4">
-                        <h3 className="text-lg font-bold text-brand-black">Encourage Category Expansion</h3>
-                        <p className="text-sm font-medium text-blue-600">Goal: Increase customer basket size and discovery</p>
-                      </div>
+                      <h3 className="text-lg font-semibold text-brand-black">Encourage Category Expansion</h3>
                     </div>
-                    <div className="space-y-3">
+                    <p className="text-sm text-blue-600 font-medium mb-3">Goal: Increase customer basket size and discovery</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <ul className="space-y-2">
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-blue-600" />
-                          </div>
-                          <span className="text-sm">Use agents to subtly introduce new categories/products each customer is likely to find relevant</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mr-2 mt-0.5">
-                            <Check className="w-3 h-3 text-blue-600" />
-                          </div>
-                          <span className="text-sm">Expand basket size by matching cross-category recommendations to interest signals and buying patterns</span>
+                        <li className="flex items-start gap-2 text-sm text-gray-700">
+                          <Check className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+                          <span>Use agents to subtly introduce new categories/products each customer is likely to find relevant</span>
                         </li>
                       </ul>
-                      <div className="pt-2">
-                        <p className="text-sm font-medium text-gray-800">Outcome: <span className="text-blue-600">Higher average order value and product exploration</span></p>
-                      </div>
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2 text-sm text-gray-700">
+                          <Check className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+                          <span>Expand basket size by matching cross-category recommendations to interest signals and buying patterns</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-gray-50 px-3 py-2 rounded-md mt-4">
+                      <p className="text-sm font-medium">Outcome: <span className="text-blue-600">Higher average order value and product exploration</span></p>
                     </div>
                   </div>
                 </div>
