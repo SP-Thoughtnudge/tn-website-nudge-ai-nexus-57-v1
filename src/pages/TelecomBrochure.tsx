@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, SignalHigh, Users, BarChart3, MessageSquare, ShieldCheck, Zap, Check } from "lucide-react";
+import { ArrowRight, Phone, SignalHigh, Users, BarChart3, MessageSquare, ShieldCheck, Zap, Check, BrainCircuit, Infinity, Network, Clock } from "lucide-react";
 
 const TelecomBrochure = () => {
   useEffect(() => {
@@ -58,122 +58,272 @@ const TelecomBrochure = () => {
           </div>
         </section>
 
+        {/* How It Works - Neuronudge Framework */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
+                  How Thoughtnudge Works
+                </h2>
+                <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                  One AI agent per customer. Always learning. Always optimizing.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h3 className="text-2xl font-bold text-brand-black mb-4">The Neuronudge Framework</h3>
+                    <p className="text-gray-700 mb-6">
+                      We marry AI with behavioral science to create autonomous agents that not only generate insights but act on them to deliver measurable outcomes.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="flex items-start">
+                        <div className="mt-1 mr-3 w-8 h-8 bg-brand-pink/20 rounded-full flex items-center justify-center">
+                          <BrainCircuit className="h-5 w-5 text-brand-pink" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold">Goal-Driven Intelligence</h4>
+                          <p className="text-gray-700">Agents optimize towards your business goals, not just engagement metrics</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="mt-1 mr-3 w-8 h-8 bg-brand-orange/20 rounded-full flex items-center justify-center">
+                          <Infinity className="h-5 w-5 text-brand-orange" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold">Autonomous Execution</h4>
+                          <p className="text-gray-700">Agents act independently to optimize message, offer, product, channel, and timing</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="mt-1 mr-3 w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                          <Network className="h-5 w-5 text-yellow-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold">Cross-Channel Intelligence</h4>
+                          <p className="text-gray-700">Unified learning across all customer touchpoints, breaking down silos</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="mt-1 mr-3 w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center">
+                          <Clock className="h-5 w-5 text-green-600" />
+                        </div>
+                        <div>
+                          <h4 className="font-bold">Contextual Continuous Learning</h4>
+                          <p className="text-gray-700">Agents get smarter over time with persistent memory and feedback loops</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <div className="bg-gray-50 rounded-lg p-6 w-full">
+                      <div className="aspect-square relative overflow-hidden rounded-lg bg-gradient-to-br from-brand-pink/10 to-brand-yellow/10 flex items-center justify-center">
+                        <div className="absolute w-32 h-32 bg-brand-pink/20 rounded-full blur-xl animate-pulse"></div>
+                        <div className="absolute w-24 h-24 bg-brand-orange/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+                        <div className="relative z-10 text-center p-6">
+                          <BrainCircuit className="mx-auto h-16 w-16 text-brand-pink mb-4" />
+                          <p className="text-lg font-medium text-brand-black">Neuronudge Framework</p>
+                          <p className="text-sm text-gray-600">AI + Behavioral Science</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+                  <p className="text-center font-medium text-gray-700">
+                    These intelligent agents don't just provide insights — they take action to deliver real business outcomes
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Key Use Cases Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
-                  Key Telecom Use Cases
+                  Top 5 Telecom Growth Use Cases
                 </h2>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  Our autonomous AI agents transform these critical telecom growth opportunities
+                  Transform your telecom business with autonomous AI agents that deliver personalized experiences at scale
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <div className="space-y-8">
                 {/* Use Case 1 */}
-                <div className="bg-white rounded-xl shadow-md p-8 border-t-4 border-brand-pink">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-brand-pink/20 rounded-full flex items-center justify-center">
-                      <Users className="w-6 h-6 text-brand-pink" />
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="md:flex">
+                    <div className="md:w-1/3 bg-brand-pink/10 p-6 flex flex-col justify-center">
+                      <div className="mb-4 w-14 h-14 bg-brand-pink/20 rounded-full flex items-center justify-center">
+                        <Users className="w-7 h-7 text-brand-pink" />
+                      </div>
+                      <h3 className="text-xl font-bold text-brand-black">Increase ARPU via Intelligent Upsell & Cross-Sell</h3>
+                      <p className="mt-2 text-lg font-medium text-brand-pink">Goal: Maximize wallet share per customer</p>
                     </div>
-                    <h3 className="text-xl font-bold text-brand-black ml-4">Churn Reduction</h3>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="text-gray-700">
-                      <span className="font-bold text-brand-pink">38% Lower Churn</span> through early intervention and personalized retention
-                    </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-brand-pink" />
-                        </div>
-                        <span>Predictive churn identification</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-brand-pink" />
-                        </div>
-                        <span>Personalized retention offers</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-brand-pink" />
-                        </div>
-                        <span>Tailored communication strategies</span>
-                      </li>
-                    </ul>
+                    <div className="md:w-2/3 p-6">
+                      <p className="text-gray-700 font-medium mb-4">How:</p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-brand-pink" />
+                          </div>
+                          <span>AI agents analyze behavioral signals, usage patterns, and engagement context to recommend the right combination of add-ons (TV, Internet, Mobile, OTT)</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-brand-pink" />
+                          </div>
+                          <span>Agents test and learn the most effective product mix, timing, and message variant to drive conversion</span>
+                        </li>
+                      </ul>
+                      <div className="mt-4 p-3 bg-gray-50 rounded-md">
+                        <p className="font-medium text-gray-800">Outcome: <span className="text-brand-pink">Higher ARPU and lower cost-per-conversion</span></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 {/* Use Case 2 */}
-                <div className="bg-white rounded-xl shadow-md p-8 border-t-4 border-brand-orange">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-brand-orange/20 rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-brand-orange" />
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="md:flex">
+                    <div className="md:w-1/3 bg-brand-orange/10 p-6 flex flex-col justify-center">
+                      <div className="mb-4 w-14 h-14 bg-brand-orange/20 rounded-full flex items-center justify-center">
+                        <Phone className="w-7 h-7 text-brand-orange" />
+                      </div>
+                      <h3 className="text-xl font-bold text-brand-black">Optimize Plan Offers for Individual ARPU Growth</h3>
+                      <p className="mt-2 text-lg font-medium text-brand-orange">Goal: Maximize yield from existing customers</p>
                     </div>
-                    <h3 className="text-xl font-bold text-brand-black ml-4">ARPU Growth</h3>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="text-gray-700">
-                      <span className="font-bold text-brand-orange">27% Higher ARPU</span> through intelligent service upgrades and cross-selling
-                    </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-brand-orange" />
-                        </div>
-                        <span>Usage-based plan recommendations</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-brand-orange" />
-                        </div>
-                        <span>Value-added service adoption</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-brand-orange" />
-                        </div>
-                        <span>Device upgrade optimization</span>
-                      </li>
-                    </ul>
+                    <div className="md:w-2/3 p-6">
+                      <p className="text-gray-700 font-medium mb-4">How:</p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-brand-orange" />
+                          </div>
+                          <span>Agents learn what plan and price point optimizes both adoption and stickiness</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-brand-orange" />
+                          </div>
+                          <span>Personalize upgrades (e.g., from prepaid to postpaid, from low data to high) with real-time context (data usage spike, speed complaints)</span>
+                        </li>
+                      </ul>
+                      <div className="mt-4 p-3 bg-gray-50 rounded-md">
+                        <p className="font-medium text-gray-800">Outcome: <span className="text-brand-orange">Profitable plan migration, improved retention</span></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 {/* Use Case 3 */}
-                <div className="bg-white rounded-xl shadow-md p-8 border-t-4 border-brand-yellow">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-brand-yellow/20 rounded-full flex items-center justify-center">
-                      <ShieldCheck className="w-6 h-6 text-yellow-600" />
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="md:flex">
+                    <div className="md:w-1/3 bg-brand-yellow/10 p-6 flex flex-col justify-center">
+                      <div className="mb-4 w-14 h-14 bg-brand-yellow/20 rounded-full flex items-center justify-center">
+                        <MessageSquare className="w-7 h-7 text-yellow-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-brand-black">Personalized Winback of Churned Users</h3>
+                      <p className="mt-2 text-lg font-medium text-yellow-600">Goal: Recover lost users with minimal cost</p>
                     </div>
-                    <h3 className="text-xl font-bold text-brand-black ml-4">Customer Onboarding</h3>
+                    <div className="md:w-2/3 p-6">
+                      <p className="text-gray-700 font-medium mb-4">How:</p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-yellow-600" />
+                          </div>
+                          <span>AI agents segment churned users by behavioral and psychographic drivers</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-yellow-600" />
+                          </div>
+                          <span>Deliver hyper-personalized re-engagement journeys with best-fit offers, channels, and timing</span>
+                        </li>
+                      </ul>
+                      <div className="mt-4 p-3 bg-gray-50 rounded-md">
+                        <p className="font-medium text-gray-800">Outcome: <span className="text-yellow-600">Higher winback rates with lower CAC</span></p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="space-y-4">
-                    <p className="text-gray-700">
-                      <span className="font-bold text-yellow-600">45% Better Activation</span> through personalized onboarding journeys
-                    </p>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-yellow-600" />
-                        </div>
-                        <span>Adaptive welcome sequences</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-yellow-600" />
-                        </div>
-                        <span>Feature adoption pathways</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                          <Check className="w-3 h-3 text-yellow-600" />
-                        </div>
-                        <span>Service verification and support</span>
-                      </li>
-                    </ul>
+                </div>
+
+                {/* Use Case 4 */}
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="md:flex">
+                    <div className="md:w-1/3 bg-green-500/10 p-6 flex flex-col justify-center">
+                      <div className="mb-4 w-14 h-14 bg-green-500/20 rounded-full flex items-center justify-center">
+                        <ShieldCheck className="w-7 h-7 text-green-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-brand-black">Retain At-Risk Customers with Personalized Strategies</h3>
+                      <p className="mt-2 text-lg font-medium text-green-600">Goal: Reduce churn from users already identified as at-risk</p>
+                    </div>
+                    <div className="md:w-2/3 p-6">
+                      <p className="text-gray-700 font-medium mb-4">How:</p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-green-600" />
+                          </div>
+                          <span>Once a user is flagged, Thoughtnudge agents determine the most effective retention strategy for each individual</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-green-600" />
+                          </div>
+                          <span>Select the right incentive, message variant, channel, and optimal timing for each customer</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-green-600" />
+                          </div>
+                          <span>Continuously experiment and adapt sequences based on user response</span>
+                        </li>
+                      </ul>
+                      <div className="mt-4 p-3 bg-gray-50 rounded-md">
+                        <p className="font-medium text-gray-800">Outcome: <span className="text-green-600">Higher save rates, reduced churn, better ROI on retention incentives</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Use Case 5 */}
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="md:flex">
+                    <div className="md:w-1/3 bg-blue-500/10 p-6 flex flex-col justify-center">
+                      <div className="mb-4 w-14 h-14 bg-blue-500/20 rounded-full flex items-center justify-center">
+                        <Zap className="w-7 h-7 text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-brand-black">Optimize Renewals & Upgrades with Adaptive Incentives</h3>
+                      <p className="mt-2 text-lg font-medium text-blue-600">Goal: Maximize conversions at key contract points</p>
+                    </div>
+                    <div className="md:w-2/3 p-6">
+                      <p className="text-gray-700 font-medium mb-4">How:</p>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-blue-600" />
+                          </div>
+                          <span>Agents evaluate contextual history to determine which incentive (discount, bonus data, early access) drives renewals</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mr-2 mt-0.5">
+                            <Check className="w-3 h-3 text-blue-600" />
+                          </div>
+                          <span>Adjust messaging and timing in real-time based on user behavior</span>
+                        </li>
+                      </ul>
+                      <div className="mt-4 p-3 bg-gray-50 rounded-md">
+                        <p className="font-medium text-gray-800">Outcome: <span className="text-blue-600">Higher renewal rates, lower incentive wastage</span></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -215,139 +365,6 @@ const TelecomBrochure = () => {
                   <h3 className="text-4xl font-bold text-yellow-600 mb-2">+53%</h3>
                   <p className="text-lg text-gray-700 font-medium">Customer Satisfaction</p>
                   <p className="text-gray-600 mt-2">Through personalized customer journeys</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stakeholder Messaging */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-center text-brand-black mb-12">
-                For Telecom Leaders
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <Users className="h-6 w-6 text-brand-pink mr-2" />
-                    <h3 className="text-xl font-bold text-brand-black">For CMOs</h3>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    Transform how you engage with subscribers through AI that understands what each individual needs at every moment in their journey.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-pink" />
-                      </div>
-                      <span>Deliver truly personalized experiences</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-pink" />
-                      </div>
-                      <span>Eliminate complex campaign management</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-pink" />
-                      </div>
-                      <span>Increase cross-selling and upselling success</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <BarChart3 className="h-6 w-6 text-brand-orange mr-2" />
-                    <h3 className="text-xl font-bold text-brand-black">For CROs</h3>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    Drive predictable revenue growth with AI that maximizes the lifetime value of each subscriber through personalized experiences.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-orange" />
-                      </div>
-                      <span>Identify high-value upgrade opportunities</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-orange" />
-                      </div>
-                      <span>Reduce churn of valuable subscribers</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-orange/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-orange" />
-                      </div>
-                      <span>Increase ARPU through personalized offers</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <SignalHigh className="h-6 w-6 text-yellow-600 mr-2" />
-                    <h3 className="text-xl font-bold text-brand-black">For Technology Leaders</h3>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    Unify your customer data and activation platforms with AI that learns across all touchpoints and creates seamless experiences.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-yellow-600" />
-                      </div>
-                      <span>Connect siloed customer touchpoints</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-yellow-600" />
-                      </div>
-                      <span>Extract value from existing data sources</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-yellow/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-yellow-600" />
-                      </div>
-                      <span>Easy integration with existing systems</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <MessageSquare className="h-6 w-6 text-brand-pink mr-2" />
-                    <h3 className="text-xl font-bold text-brand-black">For Customer Experience Leaders</h3>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    Create seamless, personalized experiences that make customers feel truly understood and valued across every interaction.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-pink" />
-                      </div>
-                      <span>Deliver true 1:1 personalization</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-pink" />
-                      </div>
-                      <span>Anticipate customer needs proactively</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-brand-pink/20 flex items-center justify-center mr-2 mt-0.5">
-                        <Check className="w-3 h-3 text-brand-pink" />
-                      </div>
-                      <span>Increase satisfaction and loyalty metrics</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
