@@ -2,7 +2,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "./button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,12 +42,25 @@ const Navbar = () => {
           <Link to="/blogs" className="text-brand-gray hover:text-brand-orange transition-colors">
             Blogs
           </Link>
-          <Link to="/demo-deck" className="text-brand-gray hover:text-brand-orange transition-colors">
-            Demo Deck
-          </Link>
-          <Link to="/test" className="text-brand-gray hover:text-brand-orange transition-colors">
-            Test
-          </Link>
+          
+          {/* Brochures Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-brand-gray hover:text-brand-orange transition-colors flex items-center">
+              Brochures <ChevronDown className="ml-1 h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                <Link to="/brochure/ecommerce" className="w-full">E-commerce</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/brochure/telecom" className="w-full">Telecom</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/brochure/insurance" className="w-full">Insurance</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          
           <Link to="/about" className="text-brand-gray hover:text-brand-orange transition-colors">
             About
           </Link>
@@ -98,20 +117,35 @@ const Navbar = () => {
             >
               Blogs
             </Link>
-            <Link 
-              to="/demo-deck" 
-              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Demo Deck
-            </Link>
-            <Link 
-              to="/test" 
-              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Test
-            </Link>
+            
+            {/* Mobile Brochures Section */}
+            <div className="border-t border-gray-100 pt-2">
+              <p className="font-medium text-brand-black py-2">Brochures:</p>
+              <div className="pl-4 space-y-2">
+                <Link
+                  to="/brochure/ecommerce"
+                  className="text-brand-gray hover:text-brand-orange py-1 block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  E-commerce
+                </Link>
+                <Link
+                  to="/brochure/telecom"
+                  className="text-brand-gray hover:text-brand-orange py-1 block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Telecom
+                </Link>
+                <Link
+                  to="/brochure/insurance"
+                  className="text-brand-gray hover:text-brand-orange py-1 block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Insurance
+                </Link>
+              </div>
+            </div>
+            
             <Link 
               to="/about" 
               className="text-brand-gray hover:text-brand-orange py-2 transition-colors"

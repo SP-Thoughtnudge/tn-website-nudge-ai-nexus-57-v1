@@ -12,9 +12,10 @@ import Product from "./pages/Product";
 import HowItWorks from "./pages/HowItWorks";
 import Integrations from "./pages/Integrations";
 import About from "./pages/About";
-import DemoDeck from "./pages/DemoDeck";
 import Blogs from "./pages/Blogs";
-import Test from "./pages/Test";
+import EcommerceBrochure from "./pages/EcommerceBrochure";
+import TelecomBrochure from "./pages/TelecomBrochure";
+import InsuranceBrochure from "./pages/InsuranceBrochure";
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient();
@@ -33,9 +34,10 @@ const App = () => {
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/integrations" element={<Integrations />} />
             <Route path="/about" element={<About />} />
-            <Route path="/demo-deck" element={<DemoDeck />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/test" element={<Test />} />
+            <Route path="/brochure/ecommerce" element={<EcommerceBrochure />} />
+            <Route path="/brochure/telecom" element={<TelecomBrochure />} />
+            <Route path="/brochure/insurance" element={<InsuranceBrochure />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
