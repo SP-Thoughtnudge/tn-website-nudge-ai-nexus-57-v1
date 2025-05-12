@@ -70,32 +70,32 @@ const TelecomBrochure = () => {
                 </div>
                 <div className="w-full md:w-2/3">
                   <p className="text-lg text-gray-700 mb-4">
-                    Telecom providers manage millions of customers across fragmented systems and touchpoints. But real growth doesn't come from more messages or more automation — it comes from smarter decisions.
+                    Telecom providers manage millions of customers across fragmented systems and touchpoints. But real growth doesn't come from more messages or more automation - It comes from right decisions at right time for each customer.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                     <div className="flex items-start gap-3">
                       <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center shrink-0 mt-1">
                         <span className="text-brand-pink font-bold">·</span>
                       </div>
-                      <p className="text-gray-600">Traditional systems don't adapt in real time and rely on rules that oversimplify customer behavior</p>
+                      <p className="text-gray-600">Despite automating Voice, Email, WhatsApp, SMS and deploying virtual assistants, growth has plateaued</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center shrink-0 mt-1">
                         <span className="text-brand-pink font-bold">·</span>
                       </div>
-                      <p className="text-gray-600">Siloed automation across channels — SMS, WhatsApp, email, app, IVR — with static journeys</p>
+                      <p className="text-gray-600">Most platforms automate tasks, not intelligence</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center shrink-0 mt-1">
                         <span className="text-brand-pink font-bold">·</span>
                       </div>
-                      <p className="text-gray-600">The result: flat ARPU, rising churn, and missed upsell opportunities</p>
+                      <p className="text-gray-600">The result: flat ARPU, rising churn, and missed upsell potential</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center shrink-0 mt-1">
                         <span className="text-brand-pink font-bold">·</span>
                       </div>
-                      <p className="text-gray-600">Customers don't think in channels — they expect relevance, timing, and contextual value</p>
+                      <p className="text-gray-600">Customers expect contextual relevance, not static rules based one-size-fits-all messaging</p>
                     </div>
                   </div>
                 </div>
@@ -111,12 +111,15 @@ const TelecomBrochure = () => {
               <div className="flex flex-col md:flex-row gap-10">
                 <div className="w-full md:w-1/3">
                   <h2 className="text-2xl md:text-3xl font-bold text-brand-black mb-4">
-                    The Solution
+                    Meet Thoughtnudge
                   </h2>
+                  <p className="text-lg text-gray-700 font-medium">
+                    The Agentic AI system for growth
+                  </p>
                 </div>
                 <div className="w-full md:w-2/3">
                   <p className="text-lg text-gray-700 mb-6">
-                    A system of goal-driven AI agents that think, act, and learn — individually for each customer.
+                    A system of goal-driven AI agents that learn, think, act, and adapt — individually for every customer.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                     <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
@@ -124,37 +127,52 @@ const TelecomBrochure = () => {
                         <div className="w-10 h-10 bg-brand-pink/10 rounded-full flex items-center justify-center">
                           <BrainCircuit className="h-5 w-5 text-brand-pink" />
                         </div>
-                        <h3 className="font-semibold">One Agent Per Customer</h3>
+                        <h3 className="font-semibold">Goal-First Intelligence</h3>
                       </div>
-                      <p className="text-gray-600 text-sm">Each customer gets a dedicated AI agent that optimizes their specific journey</p>
+                      <p className="text-gray-600 text-sm">Agents act based on growth goals like retention, upsell, or winback</p>
                     </div>
                     <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                       <div className="flex items-center gap-3 mb-3">
                         <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center">
-                          <Network className="h-5 w-5 text-brand-orange" />
+                          <Users className="h-5 w-5 text-brand-orange" />
                         </div>
-                        <h3 className="font-semibold">Cross-Channel Learning</h3>
+                        <h3 className="font-semibold">One Agent Per Customer</h3>
                       </div>
-                      <p className="text-gray-600 text-sm">Unified intelligence learns from every interaction across all channels</p>
+                      <p className="text-gray-600 text-sm">One AI agent guides each user towards your selected goals</p>
                     </div>
                     <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                       <div className="flex items-center gap-3 mb-3">
                         <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center">
-                          <Clock className="h-5 w-5 text-yellow-600" />
+                          <Network className="h-5 w-5 text-yellow-600" />
                         </div>
-                        <h3 className="font-semibold">Persistent Memory</h3>
+                        <h3 className="font-semibold">Cross-Channel Decisions</h3>
                       </div>
-                      <p className="text-gray-600 text-sm">Remembers every interaction and adapts strategy over time</p>
+                      <p className="text-gray-600 text-sm">Every decision across every channel is coordinated and optimized</p>
                     </div>
                     <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
                       <div className="flex items-center gap-3 mb-3">
                         <div className="w-10 h-10 bg-green-500/10 rounded-full flex items-center justify-center">
-                          <Zap className="h-5 w-5 text-green-600" />
+                          <Clock className="h-5 w-5 text-green-600" />
                         </div>
-                        <h3 className="font-semibold">Intelligent Automation</h3>
+                        <h3 className="font-semibold">Continuous Learning</h3>
                       </div>
-                      <p className="text-gray-600 text-sm">Takes the best action at the right time to achieve business goals</p>
+                      <p className="text-gray-600 text-sm">AI builds psychographic profiles and improves with every interaction</p>
                     </div>
+                    <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100 col-span-1 sm:col-span-2">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center">
+                          <Zap className="h-5 w-5 text-blue-600" />
+                        </div>
+                        <h3 className="font-semibold">Autonomous Execution</h3>
+                      </div>
+                      <p className="text-gray-600 text-sm">You set the goals and guardrails, AI delivers results without constant human intervention</p>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white rounded-lg shadow-sm p-6 mt-6 border border-dashed border-gray-300">
+                    <p className="text-gray-500 italic text-center">
+                      [VISUAL: Showcasing 3 different customers and how AI decided the right message, offer, timing, and channel for each customer]
+                    </p>
                   </div>
                 </div>
               </div>
@@ -178,10 +196,10 @@ const TelecomBrochure = () => {
                       <div className="w-10 h-10 bg-brand-pink/10 rounded-full flex items-center justify-center shrink-0">
                         <Users className="w-5 h-5 text-brand-pink" />
                       </div>
-                      <h3 className="text-base font-semibold text-brand-black">Boost ARPU via Cross-Sell & Upsell</h3>
+                      <h3 className="text-base font-semibold text-brand-black">Increase ARPU via Upsell & Cross-Sell</h3>
                     </div>
                     <p className="text-sm text-gray-700 mb-3">
-                      Agents recommend the right add-ons — TV, broadband, premium packs — based on profiles, timing, and behavior triggers.
+                      Offer the right add-on services personalized to each customer's needs. Agents decide the best product, message, and incentive based on real-time learning.
                     </p>
                     <div className="bg-gray-50 px-3 py-2 rounded-md">
                       <p className="text-sm font-medium">Impact: <span className="text-brand-pink">+32% ARPU growth</span></p>
@@ -196,10 +214,10 @@ const TelecomBrochure = () => {
                       <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center shrink-0">
                         <Phone className="w-5 h-5 text-brand-orange" />
                       </div>
-                      <h3 className="text-base font-semibold text-brand-black">Plan Optimization for Each Customer</h3>
+                      <h3 className="text-base font-semibold text-brand-black">Plan Optimization for ARPU Growth</h3>
                     </div>
                     <p className="text-sm text-gray-700 mb-3">
-                      Move customers to better-fit plans with personalized offers and messages — not generic nudges.
+                      Move customers to better-fit plans with personalized incentives and messages, not generic nudges to drive ARPU growth.
                     </p>
                     <div className="bg-gray-50 px-3 py-2 rounded-md">
                       <p className="text-sm font-medium">Impact: <span className="text-brand-orange">+25% plan upgrades</span></p>
@@ -214,10 +232,10 @@ const TelecomBrochure = () => {
                       <div className="w-10 h-10 bg-yellow-500/10 rounded-full flex items-center justify-center shrink-0">
                         <MessageSquare className="w-5 h-5 text-yellow-600" />
                       </div>
-                      <h3 className="text-base font-semibold text-brand-black">Win Back Lost Users</h3>
+                      <h3 className="text-base font-semibold text-brand-black">Win Back Churned Users</h3>
                     </div>
                     <p className="text-sm text-gray-700 mb-3">
-                      Re-engage dormant or churned users with sequences crafted uniquely per person — right message, channel, and incentive.
+                      Engage churned or dormant users with hyper-personalized winback sequences. Right channel. Right offer. Right time. All tailored at the individual level.
                     </p>
                     <div className="bg-gray-50 px-3 py-2 rounded-md">
                       <p className="text-sm font-medium">Impact: <span className="text-yellow-600">+40% win-back rate</span></p>
@@ -235,7 +253,7 @@ const TelecomBrochure = () => {
                       <h3 className="text-base font-semibold text-brand-black">Retain At-Risk Customers</h3>
                     </div>
                     <p className="text-sm text-gray-700 mb-3">
-                      When churn risk is flagged, our agents act — running tailored retention journeys with the most likely-to-work offer and narrative.
+                      When a user is flagged as a churn risk, our agent selects the most effective combination of message, incentive, and channel to maximize retention.
                     </p>
                     <div className="bg-gray-50 px-3 py-2 rounded-md">
                       <p className="text-sm font-medium">Impact: <span className="text-green-600">-38% churn reduction</span></p>
@@ -250,10 +268,10 @@ const TelecomBrochure = () => {
                       <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center shrink-0">
                         <Zap className="w-5 h-5 text-blue-600" />
                       </div>
-                      <h3 className="text-base font-semibold text-brand-black">Drive Renewals & Upgrades</h3>
+                      <h3 className="text-base font-semibold text-brand-black">Maximize Renewal</h3>
                     </div>
                     <p className="text-sm text-gray-700 mb-3">
-                      Agents learn which renewal incentive, plan upgrade, or timing works best — per user.
+                      Our agents optimize offer combinations and sequences based on user preferences, value perception, and past interactions—per user.
                     </p>
                     <div className="bg-gray-50 px-3 py-2 rounded-md">
                       <p className="text-sm font-medium">Impact: <span className="text-blue-600">+35% renewal rate</span></p>
@@ -261,24 +279,23 @@ const TelecomBrochure = () => {
                   </div>
                 </div>
                 
-                {/* Business Impact Summary */}
+                {/* Integration Note */}
                 <div className="bg-gradient-to-br from-brand-pink/5 to-brand-orange/5 rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                   <div className="p-5">
-                    <h3 className="text-base font-semibold text-brand-black mb-3">Business Outcomes</h3>
-                    <ul className="space-y-2">
-                      <li className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-brand-pink mt-0.5" />
-                        <span className="text-sm">15-40% improvement in key metrics</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-brand-pink mt-0.5" />
-                        <span className="text-sm">7x faster time-to-value than traditional approaches</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-brand-pink mt-0.5" />
-                        <span className="text-sm">70% less operational overhead</span>
-                      </li>
-                    </ul>
+                    <h3 className="text-base font-semibold text-brand-black mb-3">Easy Integration</h3>
+                    <p className="text-sm text-gray-700">Making your existing systems intelligent — no rip and replace</p>
+                    <div className="mt-3">
+                      <ul className="space-y-2">
+                        <li className="flex items-start gap-2">
+                          <Check className="w-4 h-4 text-brand-pink mt-0.5" />
+                          <span className="text-sm">Connects to your existing CRM, marketing, and data platforms</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <Check className="w-4 h-4 text-brand-pink mt-0.5" />
+                          <span className="text-sm">Enhances your current tech stack with AI-driven intelligence</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -401,9 +418,9 @@ const TelecomBrochure = () => {
                 
                 <div className="w-full md:w-1/2">
                   <div className="bg-gradient-to-br from-brand-black to-gray-800 text-white rounded-xl p-6 shadow-lg">
-                    <h3 className="text-xl font-bold mb-3">Ready to Transform Your Growth Strategy?</h3>
+                    <h3 className="text-xl font-bold mb-3">⚡ Ready to Transform Telecom Growth?</h3>
                     <p className="mb-6">
-                      Join forward-thinking telecom providers using Thoughtnudge's autonomous growth agents to deliver personalized customer experiences and drive revenue growth.
+                      Let Thoughtnudge agents do the thinking — and deliver measurable outcomes for your enterprise.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Button variant="pink" size="lg" className="group" asChild>
