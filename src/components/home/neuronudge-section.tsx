@@ -63,7 +63,7 @@ const NeuronudgeSection = () => {
               </p>
             </div>
             
-            <Button asChild variant="black" className="mt-4 group">
+            <Button asChild variant="default" className="mt-4 group bg-brand-black text-white hover:bg-brand-black/90">
               <Link to="/how-it-works">
                 Explore the Framework
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
