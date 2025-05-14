@@ -42,25 +42,6 @@ const Navbar = () => {
           <Link to="/blogs" className="text-brand-gray hover:text-brand-orange transition-colors">
             Blogs
           </Link>
-          
-          {/* Brochures Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger className="text-brand-gray hover:text-brand-orange transition-colors flex items-center">
-              Brochures <ChevronDown className="ml-1 h-4 w-4" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              <DropdownMenuItem>
-                <Link to="/brochure/ecommerce" className="w-full">E-commerce</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link to="/brochure/telecom" className="w-full">Telecom</Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link to="/brochure/insurance" className="w-full">Insurance</Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          
           <Link to="/about" className="text-brand-gray hover:text-brand-orange transition-colors">
             About
           </Link>
@@ -117,35 +98,6 @@ const Navbar = () => {
             >
               Blogs
             </Link>
-            
-            {/* Mobile Brochures Section */}
-            <div className="border-t border-gray-100 pt-2">
-              <p className="font-medium text-brand-black py-2">Brochures:</p>
-              <div className="pl-4 space-y-2">
-                <Link
-                  to="/brochure/ecommerce"
-                  className="text-brand-gray hover:text-brand-orange py-1 block"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  E-commerce
-                </Link>
-                <Link
-                  to="/brochure/telecom"
-                  className="text-brand-gray hover:text-brand-orange py-1 block"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Telecom
-                </Link>
-                <Link
-                  to="/brochure/insurance"
-                  className="text-brand-gray hover:text-brand-orange py-1 block"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Insurance
-                </Link>
-              </div>
-            </div>
-            
             <Link 
               to="/about" 
               className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
