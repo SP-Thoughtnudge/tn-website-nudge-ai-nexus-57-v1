@@ -1,23 +1,10 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import CalendarDialog from "@/components/ui/calendar-dialog";
-import { useEffect } from "react";
 
 const HeroSection = () => {
-  // Load Zcal script when component mounts
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://static.zcal.co/embed/v1/embed.js";
-    script.async = true;
-    script.type = "text/javascript";
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100">
       <div className="container mx-auto px-4 md:px-6">

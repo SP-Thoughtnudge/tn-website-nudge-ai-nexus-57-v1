@@ -1,8 +1,8 @@
 
 import React from "react";
-import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ExternalLink } from "lucide-react";
 
 type CalendarDialogProps = {
   children: React.ReactNode;
@@ -19,31 +19,29 @@ const CalendarDialog = ({
   buttonSize = "xl",
   customTrigger,
 }: CalendarDialogProps) => {
+  // Direct Calendly URL
+  const calendlyUrl = "https://calendly.com/himanshu_chauhan/30min";
+
   return (
-    <Dialog>
-      <DialogTrigger asChild>
-        {customTrigger || (
-          <Button
-            variant={buttonVariant}
-            size={buttonSize}
-            className={cn("group", className)}
-          >
+    <>
+      {customTrigger ? (
+        <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className={className}>
+          {customTrigger}
+        </a>
+      ) : (
+        <Button
+          variant={buttonVariant}
+          size={buttonSize}
+          className={cn("group", className)}
+          asChild
+        >
+          <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
             {children}
-          </Button>
-        )}
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-[600px] p-0">
-        <DialogTitle className="sr-only">Schedule a Meeting</DialogTitle>
-        <iframe
-          src="https://calendly.com/himanshu_chauhan/30min"
-          width="100%"
-          height="600px"
-          frameBorder="0"
-          title="Schedule a meeting"
-          className="rounded-md"
-        ></iframe>
-      </DialogContent>
-    </Dialog>
+            <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </a>
+        </Button>
+      )}
+    </>
   );
 };
 
