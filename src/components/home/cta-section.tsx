@@ -32,16 +32,16 @@ const CtaSection = () => {
             </div>
             <div className="mt-8 grid grid-cols-3 gap-6 text-center">
               <div>
-                <p className="text-3xl font-bold text-brand-orange">2.4x</p>
+                <p className="text-3xl font-bold text-brand-orange">40%</p>
                 <p className="text-gray-400">Higher conversions</p>
               </div>
               <div>
                 <p className="text-3xl font-bold text-brand-yellow">60%</p>
-                <p className="text-gray-400">Less manual work</p>
+                <p className="text-gray-400">Higher efficiency</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-brand-pink">93%</p>
-                <p className="text-gray-400">Customer satisfaction</p>
+                <p className="text-3xl font-bold text-brand-pink">35%</p>
+                <p className="text-gray-400">Lower costs</p>
               </div>
             </div>
           </div>

@@ -57,20 +57,20 @@ const LogoCloud = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center mt-8 border-t border-gray-100 pt-12">
           <div className="bg-gray-50 p-6 rounded-lg">
-            <p className="text-3xl font-bold text-brand-pink mb-2">93%</p>
-            <p className="text-brand-gray">increase in customer engagement</p>
+            <p className="text-3xl font-bold text-brand-pink mb-2">40%</p>
+            <p className="text-brand-gray">higher conversion</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <p className="text-3xl font-bold text-brand-orange mb-2">2.4x</p>
-            <p className="text-brand-gray">higher conversion rates</p>
+            <p className="text-3xl font-bold text-brand-orange mb-2">60%</p>
+            <p className="text-brand-gray">higher efficiency</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <p className="text-3xl font-bold text-brand-yellow mb-2">60%</p>
-            <p className="text-brand-gray">reduction in campaign setup time</p>
+            <p className="text-3xl font-bold text-brand-yellow mb-2">35%</p>
+            <p className="text-brand-gray">lower costs</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg">
-            <p className="text-3xl font-bold text-brand-pink mb-2">85%</p>
-            <p className="text-brand-gray">of users report higher ROI</p>
+            <p className="text-3xl font-bold text-brand-pink mb-2">25%</p>
+            <p className="text-brand-gray">higher CLTV</p>
           </div>
         </div>
       </div>
