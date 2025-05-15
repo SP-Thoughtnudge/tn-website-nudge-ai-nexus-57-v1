@@ -1,37 +1,27 @@
 
 const LogoCloud = () => {
-  // Real company logos
+  // Updated company logos with new images
   const logos = [
     { 
-      src: "/lovable-uploads/2ecd3e81-daa9-4c0e-8a37-7448f8f39df6.png", 
+      src: "/lovable-uploads/c0bf89d6-693b-4937-a2ea-bba9658803eb.png", 
       alt: "Conscious Chemist", 
-      className: "h-12 w-32 object-contain" 
+      className: "h-12 w-auto object-contain" 
     },
     { 
-      src: "/lovable-uploads/f7996a52-3684-4c71-a780-2533d4ae8cfd.png", 
+      src: "/lovable-uploads/d11d516d-db05-4e2f-ba79-18ddc6238a3c.png", 
       alt: "Cooked", 
-      className: "h-12 w-32 object-contain" 
+      className: "h-12 w-auto object-contain" 
     },
     { 
-      src: "/lovable-uploads/72da9cc0-80c9-429e-b00c-7235581ebd26.png", 
-      alt: "Sugarbox", 
-      className: "h-12 w-32 object-contain" 
+      src: "/lovable-uploads/cf44b6d1-6cbe-4d7b-981c-ef62fe6012f4.png", 
+      alt: "Alice Blue", 
+      className: "h-12 w-auto object-contain" 
     },
     { 
-      src: "/lovable-uploads/f7996a52-3684-4c71-a780-2533d4ae8cfd.png", 
-      alt: "Cooked", 
-      className: "h-12 w-32 object-contain" 
-    },
-    { 
-      src: "/lovable-uploads/2ecd3e81-daa9-4c0e-8a37-7448f8f39df6.png", 
-      alt: "Conscious Chemist", 
-      className: "h-12 w-32 object-contain" 
-    },
-    { 
-      src: "/lovable-uploads/72da9cc0-80c9-429e-b00c-7235581ebd26.png", 
-      alt: "Sugarbox", 
-      className: "h-12 w-32 object-contain" 
-    },
+      src: "/lovable-uploads/bcd2babc-3041-43b5-b6e3-a5696fc23edd.png", 
+      alt: "Green Logo", 
+      className: "h-14 w-auto object-contain" 
+    }
   ];
 
   return (
@@ -43,7 +33,7 @@ const LogoCloud = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center mb-12">
           {logos.map((logo, i) => (
             <div key={i} className="flex items-center justify-center p-4 bg-white rounded shadow-sm border border-gray-50 hover:shadow-md transition-shadow">
               <img 
