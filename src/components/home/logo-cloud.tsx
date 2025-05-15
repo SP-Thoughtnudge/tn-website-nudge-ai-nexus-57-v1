@@ -20,7 +20,7 @@ const LogoCloud = () => {
     { 
       src: "/lovable-uploads/bcd2babc-3041-43b5-b6e3-a5696fc23edd.png", 
       alt: "Green Logo", 
-      className: "h-14 w-auto object-contain" 
+      className: "h-12 w-auto object-contain" 
     }
   ];
 

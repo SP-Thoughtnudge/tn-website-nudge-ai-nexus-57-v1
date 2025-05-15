@@ -11,6 +11,8 @@ import CtaSection from "@/components/home/cta-section";
 import LogoCloud from "@/components/home/logo-cloud";
 import HowItWorksSimple from "@/components/home/how-it-works-simple";
 import WhyItMattersSection from "@/components/home/why-it-matters-section";
+import BenefitsSection from "@/components/home/benefits-section";
+import ProblemSection from "@/components/home/problem-section";
 
 const Index = () => {
   return (
@@ -20,9 +22,11 @@ const Index = () => {
         <HeroSection />
         <LogoCloud />
         <ValueProposition />
-        <AutonomousSection />
-        <HowItWorksSimple />
         <WhyItMattersSection />
+        <BenefitsSection />
+        <HowItWorksSimple />
+        <ProblemSection />
+        <AutonomousSection />
         <IntegrationSection />
         <NeuronudgeSection />
         <TestimonialSection />

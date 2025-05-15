@@ -5,37 +5,14 @@ const ProblemSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-            The Broken State of Customer Engagement
+            Beyond Automated Messaging
           </h2>
           <p className="text-xl text-gray-600">
-            Despite massive investments in different channels and automation technologies, customer engagement still feels robotic, broken, and siloed.
+            While others focus on automating messages, we're transforming how businesses make decisions for each customer.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-brand-black mb-3">Channel-Centric Silos</h3>
-              <p className="text-gray-600">
-                Businesses have automated channels—emails, WhatsApp, voice, SMS—individually, but customers don't experience your brand in silos.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-brand-black mb-3">Automation Without Intelligence</h3>
-              <p className="text-gray-600">
-                Most platforms automate messaging, not intelligence. They don't truly learn what works for each customer across touchpoints.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-              <h3 className="text-xl font-bold text-brand-black mb-3">No Evolution Over Time</h3>
-              <p className="text-gray-600">
-                Even new LLM-based agents are reactive—stuck in one channel, lacking persistent context and continuous intelligence that evolves.
-              </p>
-            </div>
-          </div>
-
           <div className="relative">
             <div className="absolute -z-10 inset-0 bg-gradient-to-br from-brand-yellow/30 to-brand-pink/20 rounded-full blur-3xl"></div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
@@ -43,7 +20,7 @@ const ProblemSection = () => {
                 What if AI could unify customer intelligence across every touchpoint?
               </h3>
               <p className="text-gray-600 mb-6">
-                Thoughtnudge deploys autonomous growth agents that learn, optimize, and adapt across all customer interactions—not channel-first, not campaign-first, but customer-first and goal-first.
+                Thoughtnudge deploys autonomous growth agents that learn, optimize, and adapt across all customer interactions—focusing on each individual customer and your business goals.
               </p>
               <div className="flex justify-center">
                 <img
@@ -52,6 +29,29 @@ const ProblemSection = () => {
                   className="rounded-lg shadow-md max-w-full"
                 />
               </div>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-brand-black mb-3">Customer-First Intelligence</h3>
+              <p className="text-gray-600">
+                Each AI agent builds understanding of one customer across all touchpoints, creating a unified experience rather than fragmented interactions.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-brand-black mb-3">Continuous Learning System</h3>
+              <p className="text-gray-600">
+                While most platforms automate messaging, our system continuously learns what works for each individual customer across all channels.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+              <h3 className="text-xl font-bold text-brand-black mb-3">Autonomous Execution</h3>
+              <p className="text-gray-600">
+                Set your business goals and guardrails. The AI handles execution—making decisions on what to say, when, where, and how for maximum impact.
+              </p>
             </div>
           </div>
         </div>
