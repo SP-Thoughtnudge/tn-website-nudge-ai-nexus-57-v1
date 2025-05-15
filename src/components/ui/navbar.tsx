@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "./button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import CalendarDialog from "@/components/ui/calendar-dialog";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -45,9 +46,9 @@ const Navbar = () => {
           <Link to="/about" className="text-brand-gray hover:text-brand-orange transition-colors">
             About
           </Link>
-          <Button variant="pink" className="ml-4">
+          <CalendarDialog buttonVariant="pink" className="ml-4">
             Book a Demo
-          </Button>
+          </CalendarDialog>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -105,9 +106,9 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Button variant="pink" className="mt-2">
+            <CalendarDialog buttonVariant="pink" className="mt-2">
               Book a Demo
-            </Button>
+            </CalendarDialog>
           </div>
         </div>
       )}
