@@ -18,7 +18,7 @@ const AutonomousSection = () => {
             Unlike reactive AI systems that don't improve over time, ThoughtNudge agents build contextual memory and continuously evolve with every customer interaction.
           </p>
           <div className="flex justify-center">
-            <CalendarDialog buttonVariant="yellow">
+            <CalendarDialog buttonVariant="orange">
               See It In Action
             </CalendarDialog>
           </div>

@@ -1,13 +1,13 @@
 
 import React from "react";
-import { Dialog, DialogTrigger, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type CalendarDialogProps = {
   children: React.ReactNode;
   className?: string;
-  buttonVariant?: "orange" | "pink" | "default" | "outline";
+  buttonVariant?: "orange" | "pink" | "default" | "outline" | "yellow";
   buttonSize?: "default" | "sm" | "lg" | "xl";
   customTrigger?: React.ReactNode;
 };
@@ -33,6 +33,7 @@ const CalendarDialog = ({
         )}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] p-0">
+        <DialogTitle className="sr-only">Schedule a Meeting</DialogTitle>
         <div className="zcal-inline-widget h-[600px] w-full">
           <a href="https://zcal.co/himanshuchauhan" className="hidden">
             Schedule a meeting
