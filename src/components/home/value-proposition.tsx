@@ -1,6 +1,7 @@
 
 import { BrainCircuit, Target, TrendingUp, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import CalendarDialog from "@/components/ui/calendar-dialog";
 
 const ValueCard = ({ icon: Icon, title, description }) => {
   return (
@@ -27,9 +28,17 @@ const ValueProposition = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
             Beyond Siloed Automation
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 mb-6">
             Customers don't experience your brand in silos. Why is your customer engagement still fragmented?
           </p>
+          <p className="text-2xl font-bold text-brand-orange mb-8">
+            Channels Don't Drive Growth. Intelligence Does.
+          </p>
+          <div className="flex justify-center">
+            <CalendarDialog buttonVariant="pink">
+              Schedule a Demo
+            </CalendarDialog>
+          </div>
         </div>
         
         {/* The transformation visualization */}

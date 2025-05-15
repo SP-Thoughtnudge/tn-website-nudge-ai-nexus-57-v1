@@ -1,9 +1,24 @@
 
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import CalendarDialog from "@/components/ui/calendar-dialog";
+import { useEffect } from "react";
 
 const HeroSection = () => {
+  // Load Zcal script when component mounts
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.zcal.co/embed/v1/embed.js";
+    script.async = true;
+    script.type = "text/javascript";
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100">
       <div className="container mx-auto px-4 md:px-6">
@@ -14,19 +29,17 @@ const HeroSection = () => {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-black leading-tight mb-6 animate-fade-in">
-            <span className="text-brand-orange">Autonomous Growth Agents</span> That Learn Across Every Touchpoint
+            <span className="text-brand-orange">Growth Agents That Learn, Adapt, and Act—</span>Autonomously
           </h1>
           
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
-            Not channel-first. Not campaign-first. Customer-first. Goal-first. Thoughtnudge deploys AI agents that learn, adapt, and deliver results across all your customer interactions.
+            Thoughtnudge's intelligent agents learn from every customer interaction, adapting in real-time to drive conversions, retention, and lifetime value across all channels.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
-            <Button variant="orange" size="xl" asChild>
-              <Link to="/demo">
-                Book a Demo <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+            <CalendarDialog>
+              Book a Demo <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </CalendarDialog>
             <Button variant="outline" size="xl" asChild>
               <Link to="/how-it-works">See How It Works</Link>
             </Button>

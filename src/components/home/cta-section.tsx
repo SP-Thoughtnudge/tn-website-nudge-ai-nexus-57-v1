@@ -1,6 +1,7 @@
 
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import CalendarDialog from "@/components/ui/calendar-dialog";
 
 const CtaSection = () => {
   return (
@@ -21,12 +22,12 @@ const CtaSection = () => {
               Join forward-thinking brands using Thoughtnudge's autonomous growth agents to build intelligence that unifies customer experiences across all touchpoints and delivers real business outcomes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="pink" size="xl" className="group">
+              <CalendarDialog buttonVariant="pink">
                 Book a Demo
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button variant="outline" size="xl" className="text-white border-white hover:bg-white/10">
-                See How It Works
+              </CalendarDialog>
+              <Button variant="outline" size="xl" className="text-white border-white hover:bg-white/10" asChild>
+                <a href="/how-it-works">See How It Works</a>
               </Button>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-6 text-center">

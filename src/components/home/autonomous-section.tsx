@@ -1,5 +1,6 @@
 
 import { BrainCircuit, BarChart, Compass, Zap } from "lucide-react";
+import CalendarDialog from "@/components/ui/calendar-dialog";
 
 const AutonomousSection = () => {
   return (
@@ -13,9 +14,14 @@ const AutonomousSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
             Intelligence That Evolves, Not Just Automates
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 mb-8">
             Unlike reactive AI systems that don't improve over time, ThoughtNudge agents build contextual memory and continuously evolve with every customer interaction.
           </p>
+          <div className="flex justify-center">
+            <CalendarDialog buttonVariant="yellow">
+              See It In Action
+            </CalendarDialog>
+          </div>
         </div>
 
         {/* Autonomous execution visualization */}
