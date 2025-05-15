@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/ui/navbar";
@@ -31,7 +32,7 @@ const HowItWorks = () => {
                 Unlike siloed systems that don't learn over time, Thoughtnudge deploys AI agents that build intelligence across all touchpoints, coordinating experiences that drive real business outcomes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in [animation-delay:400ms]">
-                <CalendarDialog buttonVariant="pink" size="lg">
+                <CalendarDialog buttonVariant="pink" buttonSize="lg">
                   Get a Demo
                 </CalendarDialog>
               </div>
@@ -57,7 +58,7 @@ const HowItWorks = () => {
                 Join innovative brands using Thoughtnudge to deliver unified customer experiences that continuously evolve and improve with every interaction.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <CalendarDialog buttonVariant="pink" size="lg">
+                <CalendarDialog buttonVariant="pink" buttonSize="lg">
                   Request a Demo
                 </CalendarDialog>
                 <Button variant="outline" size="lg" asChild>
