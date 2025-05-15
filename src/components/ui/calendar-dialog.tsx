@@ -34,11 +34,14 @@ const CalendarDialog = ({
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] p-0">
         <DialogTitle className="sr-only">Schedule a Meeting</DialogTitle>
-        <div className="zcal-inline-widget h-[600px] w-full">
-          <a href="https://zcal.co/himanshuchauhan" className="hidden">
-            Schedule a meeting
-          </a>
-        </div>
+        <iframe
+          src="https://calendly.com/himanshu_chauhan/30min"
+          width="100%"
+          height="600px"
+          frameBorder="0"
+          title="Schedule a meeting"
+          className="rounded-md"
+        ></iframe>
       </DialogContent>
     </Dialog>
   );

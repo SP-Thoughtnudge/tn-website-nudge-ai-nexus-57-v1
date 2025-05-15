@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/ui/navbar";
@@ -9,6 +8,7 @@ import ProcessSection from "@/components/how-it-works/process-section";
 import ComparisonSection from "@/components/how-it-works/comparison-section";
 import IntegrationSection from "@/components/how-it-works/integration-section";
 import CaseStudyPreview from "@/components/how-it-works/case-study-preview";
+import CalendarDialog from "@/components/ui/calendar-dialog";
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -31,11 +31,9 @@ const HowItWorks = () => {
                 Unlike siloed systems that don't learn over time, Thoughtnudge deploys AI agents that build intelligence across all touchpoints, coordinating experiences that drive real business outcomes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in [animation-delay:400ms]">
-                <Button variant="pink" size="lg" asChild>
-                  <Link to="/demo">
-                    Get a Demo
-                  </Link>
-                </Button>
+                <CalendarDialog buttonVariant="pink" size="lg">
+                  Get a Demo
+                </CalendarDialog>
               </div>
             </div>
           </div>
@@ -59,11 +57,9 @@ const HowItWorks = () => {
                 Join innovative brands using Thoughtnudge to deliver unified customer experiences that continuously evolve and improve with every interaction.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="pink" size="lg" asChild>
-                  <Link to="/demo">
-                    Request a Demo
-                  </Link>
-                </Button>
+                <CalendarDialog buttonVariant="pink" size="lg">
+                  Request a Demo
+                </CalendarDialog>
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/case-studies">
                     View Customer Stories

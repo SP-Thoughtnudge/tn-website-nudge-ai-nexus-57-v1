@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import CalendarDialog from "@/components/ui/calendar-dialog";
 
 const Footer = () => {
   return (
@@ -85,9 +86,9 @@ const Footer = () => {
           {/* Column 4 - Call to Action */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-brand-black">Ready to transform your marketing?</h3>
-            <Link to="/demo" className="inline-flex bg-brand-orange hover:bg-brand-orange/90 text-white py-2 px-4 rounded-md font-medium transition-colors">
+            <CalendarDialog buttonVariant="orange" className="w-full justify-center">
               Book a Demo
-            </Link>
+            </CalendarDialog>
             <p className="text-gray-600 text-sm mt-2">
               Get a personalized tour of the platform
             </p>
