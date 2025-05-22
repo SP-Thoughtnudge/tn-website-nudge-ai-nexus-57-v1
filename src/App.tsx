@@ -16,6 +16,7 @@ import Blogs from "./pages/Blogs";
 import EcommerceBrochure from "./pages/EcommerceBrochure";
 import TelecomBrochure from "./pages/TelecomBrochure";
 import InsuranceBrochure from "./pages/InsuranceBrochure";
+import Test from "./pages/Test";
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/integrations" element={<Integrations />} />
             <Route path="/about" element={<About />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/test" element={<Test />} />
             <Route path="/brochure/ecommerce" element={<EcommerceBrochure />} />
             <Route path="/brochure/telecom" element={<TelecomBrochure />} />
             <Route path="/brochure/insurance" element={<InsuranceBrochure />} />

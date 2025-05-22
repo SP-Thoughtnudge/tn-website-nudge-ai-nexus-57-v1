@@ -46,6 +46,9 @@ const Navbar = () => {
           <Link to="/about" className="text-brand-gray hover:text-brand-orange transition-colors">
             About
           </Link>
+          <Link to="/test" className="text-brand-gray hover:text-brand-orange transition-colors">
+            Test
+          </Link>
           <CalendarDialog buttonVariant="pink" className="ml-4">
             Book a Demo
           </CalendarDialog>
@@ -105,6 +108,13 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </Link>
+            <Link 
+              to="/test" 
+              className="text-brand-gray hover:text-brand-orange py-2 transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Test
             </Link>
             <CalendarDialog buttonVariant="pink" className="mt-2">
               Book a Demo
