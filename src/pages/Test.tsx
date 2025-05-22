@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Settings, Users, Shield, Brain, Clock, Calendar, Mail, MessageSquare, Phone, Zap } from "lucide-react";
+import { Settings, Users, Shield, Brain, Clock, Calendar, Mail, MessageSquare, Phone, Zap, Bell } from "lucide-react";
 
 const Test = () => {
   return (
@@ -61,23 +61,8 @@ const Test = () => {
                       <div className="flex items-center">
                         <Phone className="h-3 w-3 mr-0.5" /> Voice
                       </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white p-2 rounded border border-gray-200 mb-2">
-                    <div className="uppercase text-xs text-gray-500 mb-0.5">UPSELL PRODUCTS</div>
-                    <div className="flex flex-wrap gap-1 text-xs">
                       <div className="flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-0.5"></span> Home Insurance
-                      </div>
-                      <div className="flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-0.5"></span> Umbrella Policy
-                      </div>
-                      <div className="flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-0.5"></span> Life Insurance
-                      </div>
-                      <div className="flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-0.5"></span> Roadside Assistance
+                        <Bell className="h-3 w-3 mr-0.5" /> Push
                       </div>
                     </div>
                   </div>
@@ -86,7 +71,6 @@ const Test = () => {
                     <div className="uppercase text-xs text-gray-500 mb-0.5">OFFERS</div>
                     <div className="flex flex-wrap gap-1 text-xs">
                       <span className="px-1 py-0.5 bg-gray-100 rounded">10% Loyalty Discount</span>
-                      <span className="px-1 py-0.5 bg-gray-100 rounded">Bundle Discount</span>
                       <span className="px-1 py-0.5 bg-gray-100 rounded">Accident Forgiveness</span>
                       <span className="px-1 py-0.5 bg-gray-100 rounded">Free Add-on</span>
                     </div>
@@ -152,11 +136,11 @@ const Test = () => {
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
-                      <div className="text-xs">Renewal Notice</div>
+                      <div className="text-xs">Safety-focused renewal</div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                        <Clock className="h-2 w-2 mr-1" /> Mon 9am
+                        <Clock className="h-2 w-2 mr-1" /> Step 1
                       </div>
                     </div>
                     <div className="bg-white p-1 rounded border border-gray-200">
@@ -168,7 +152,7 @@ const Test = () => {
                       <div className="text-xs">Standard Renewal</div>
                     </div>
                   </div>
-                  <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-1">
+                  <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-3">
                     <span className="text-xs font-medium">RL Decision:</span> Safety-focused messaging with single touchpoint resulted in direct conversion
                   </div>
                 </div>
@@ -187,40 +171,45 @@ const Test = () => {
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
-                      <div className="text-xs">Auto + Home Bundle</div>
+                      <div className="text-xs">Savings-focused offer</div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                        <Clock className="h-2 w-2 mr-1" /> Tue 7am
+                        <Clock className="h-2 w-2 mr-1" /> Step 1
                       </div>
                     </div>
                     <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center text-xs">
+                        <span className="w-2 h-2 bg-yellow-500 rounded-full mr-1"></span> No action
+                      </div>
+                      <div className="text-xs">Browsed & left</div>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
                         <MessageSquare className="h-2 w-2 mr-1" /> SMS
                       </div>
-                      <div className="text-xs">Same offer + Urgency</div>
+                      <div className="text-xs">Urgent + Savings</div>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-center text-xs justify-end mb-1">
-                    <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                      <Clock className="h-2 w-2 mr-1" /> Thu 6pm
+                    <div className="flex items-center justify-center text-xs">
+                      <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
+                        <Clock className="h-2 w-2 mr-1" /> Step 2
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="flex justify-end mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200 w-2/3">
+                    <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center justify-between text-xs">
                         <span className="flex items-center">
                           <span className="w-2 h-2 bg-green-500 rounded-full mr-1"></span> Converted
                         </span>
                       </div>
-                      <div className="text-xs">Auto + Home Bundle</div>
+                      <div className="text-xs">Standard Renewal</div>
                     </div>
                   </div>
                   
-                  <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-1">
-                    <span className="text-xs font-medium">RL Decision:</span> Multiple touchpoints with channel shift and upsell based on browsing behavior
+                  <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-3">
+                    <span className="text-xs font-medium">RL Decision:</span> Channel shift + urgency based on browsing behavior
                   </div>
                 </div>
                 
@@ -236,42 +225,67 @@ const Test = () => {
                   <div className="grid grid-cols-3 gap-1 mb-1">
                     <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center text-xs">
-                        <MessageSquare className="h-2 w-2 mr-1" /> WhatsApp
+                        <Bell className="h-2 w-2 mr-1" /> Push
                       </div>
-                      <div className="text-xs">Life Insurance Upsell</div>
+                      <div className="text-xs">Family-focused message</div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                        <Clock className="h-2 w-2 mr-1" /> Mon 2pm
+                        <Clock className="h-2 w-2 mr-1" /> Step 1
                       </div>
                     </div>
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
+                        <span className="w-2 h-2 bg-yellow-500 rounded-full mr-1"></span> Viewed
+                      </div>
+                      <div className="text-xs">No action</div>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
+                        <Mail className="h-2 w-2 mr-1" /> Email
+                      </div>
+                      <div className="text-xs">Detailed benefits</div>
+                    </div>
+                    <div className="flex items-center justify-center text-xs">
+                      <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
+                        <Clock className="h-2 w-2 mr-1" /> Step 2
+                      </div>
+                    </div>
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
+                        <span className="w-2 h-2 bg-yellow-500 rounded-full mr-1"></span> Viewed
+                      </div>
+                      <div className="text-xs">Browsed details</div>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-1 mb-1">
                     <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center text-xs">
                         <Phone className="h-2 w-2 mr-1" /> Voice
                       </div>
                       <div className="text-xs">Agent Call</div>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-center text-xs justify-end mb-1">
-                    <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                      <Clock className="h-2 w-2 mr-1" /> Sat 10am
+                    <div className="flex items-center justify-center text-xs">
+                      <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
+                        <Clock className="h-2 w-2 mr-1" /> Step 3
+                      </div>
                     </div>
-                  </div>
-                  
-                  <div className="flex justify-end mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200 w-2/3">
+                    <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center justify-between text-xs">
                         <span className="flex items-center">
                           <span className="w-2 h-2 bg-green-500 rounded-full mr-1"></span> Converted
                         </span>
                       </div>
-                      <div className="text-xs">Family Auto + Life</div>
+                      <div className="text-xs">Premium Renewal</div>
                     </div>
                   </div>
                   
-                  <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-1">
-                    <span className="text-xs font-medium">RL Decision:</span> Human touchpoint after digital engagement based on complexity of decision
+                  <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-3">
+                    <span className="text-xs font-medium">RL Decision:</span> Escalation to human touchpoint after digital engagement showed interest
                   </div>
                 </div>
                 
@@ -293,25 +307,50 @@ const Test = () => {
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                        <Clock className="h-2 w-2 mr-1" /> Wed 9am
+                        <Clock className="h-2 w-2 mr-1" /> Step 1
                       </div>
                     </div>
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mr-1"></span> No action
+                      </div>
+                      <div className="text-xs">Ignored</div>
+                    </div>
+                  </div>
+                  
+                  <div className="grid grid-cols-3 gap-1 mb-1">
                     <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
                       <div className="text-xs">Urgent Reminder</div>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-center text-xs justify-end mb-1">
-                    <div className="bg-red-100 text-red-800 text-xs px-1 py-0.5 rounded-full flex items-center">
-                      <Clock className="h-2 w-2 mr-1" /> 5 days later
+                    <div className="flex items-center justify-center text-xs">
+                      <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
+                        <Clock className="h-2 w-2 mr-1" /> Step 2
+                      </div>
+                    </div>
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mr-1"></span> No action
+                      </div>
+                      <div className="text-xs">Opened, ignored</div>
                     </div>
                   </div>
                   
-                  <div className="flex justify-end mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200 w-2/3">
+                  <div className="grid grid-cols-3 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200">
+                      <div className="flex items-center text-xs">
+                        <Phone className="h-2 w-2 mr-1" /> Voice
+                      </div>
+                      <div className="text-xs">Retention call</div>
+                    </div>
+                    <div className="flex items-center justify-center text-xs">
+                      <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
+                        <Clock className="h-2 w-2 mr-1" /> Step 3
+                      </div>
+                    </div>
+                    <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center justify-between text-xs">
                         <span className="flex items-center">
                           <span className="w-2 h-2 bg-red-500 rounded-full mr-1"></span> Not Renewed
@@ -322,7 +361,7 @@ const Test = () => {
                   </div>
                   
                   <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700">
-                    <span className="text-xs font-medium">RL Decision:</span> Multiple attempts with value-focused messaging, flagged for retention specialist
+                    <span className="text-xs font-medium">RL Decision:</span> Multi-channel escalation following non-response pattern
                   </div>
                 </div>
               </CardContent>
@@ -388,7 +427,7 @@ const Test = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-yellow-500 mr-1">•</span>
-                      <span>Responds to bundled savings opportunities</span>
+                      <span>Responds to time-limited offers</span>
                     </li>
                   </ul>
                 </div>
@@ -409,7 +448,7 @@ const Test = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-blue-500 mr-1">•</span>
-                      <span>Shifted from savings to personal messaging</span>
+                      <span>Multi-touchpoint interaction pattern</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-blue-500 mr-1">•</span>
@@ -417,7 +456,7 @@ const Test = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-blue-500 mr-1">•</span>
-                      <span>Human touchpoint essential for complex products</span>
+                      <span>Human touchpoint essential for conversion</span>
                     </li>
                   </ul>
                 </div>
@@ -438,22 +477,22 @@ const Test = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-purple-500 mr-1">•</span>
-                      <span>Tone shift: Casual → Urgent drives action</span>
+                      <span>Non-responsive pattern across channels</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-purple-500 mr-1">•</span>
-                      <span>Non-responsiveness pattern detected</span>
+                      <span>Identified high churn risk early</span>
                     </li>
                     <li className="flex items-start">
                       <span className="text-purple-500 mr-1">•</span>
-                      <span>Identified for specialized retention efforts</span>
+                      <span>Flagged for specialized win-back campaign</span>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="mt-3 text-center">
                   <p className="text-xs text-gray-500 font-medium">AI Reinforcement Learning</p>
-                  <p className="text-xs text-gray-400">Customer profiles continuously updated based on interaction patterns and outcomes</p>
+                  <p className="text-xs text-gray-400">Each customer journey continuously improves future decisioning</p>
                 </div>
               </CardContent>
             </Card>
