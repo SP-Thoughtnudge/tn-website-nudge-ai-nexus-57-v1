@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Settings, Users, Shield, Brain, Clock, Calendar, Mail, MessageSquare, Phone, Zap, WhatsApp } from "lucide-react";
+import { Settings, Users, Shield, Brain, Clock, Calendar, Mail, MessageSquare, Phone, Zap } from "lucide-react";
 
 const Test = () => {
   return (
@@ -56,7 +56,7 @@ const Test = () => {
                         <MessageSquare className="h-3 w-3 mr-0.5" /> SMS
                       </div>
                       <div className="flex items-center">
-                        <WhatsApp className="h-3 w-3 mr-0.5" /> WhatsApp
+                        <MessageSquare className="h-3 w-3 mr-0.5" /> WhatsApp
                       </div>
                       <div className="flex items-center">
                         <Phone className="h-3 w-3 mr-0.5" /> Voice
@@ -236,7 +236,7 @@ const Test = () => {
                   <div className="grid grid-cols-3 gap-1 mb-1">
                     <div className="bg-white p-1 rounded border border-gray-200">
                       <div className="flex items-center text-xs">
-                        <WhatsApp className="h-2 w-2 mr-1" /> WhatsApp
+                        <MessageSquare className="h-2 w-2 mr-1" /> WhatsApp
                       </div>
                       <div className="text-xs">Life Insurance Upsell</div>
                     </div>
