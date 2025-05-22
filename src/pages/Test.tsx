@@ -67,15 +67,6 @@ const Test = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-white p-2 rounded border border-gray-200 mb-2">
-                    <div className="uppercase text-xs text-gray-500 mb-0.5">OFFERS</div>
-                    <div className="flex flex-wrap gap-1 text-xs">
-                      <span className="px-1 py-0.5 bg-gray-100 rounded">10% Loyalty Discount</span>
-                      <span className="px-1 py-0.5 bg-gray-100 rounded">Accident Forgiveness</span>
-                      <span className="px-1 py-0.5 bg-gray-100 rounded">Free Add-on</span>
-                    </div>
-                  </div>
-                  
                   <div className="bg-white p-2 rounded border border-gray-200">
                     <div className="uppercase text-xs text-gray-500 mb-0.5">MESSAGE VARIATIONS</div>
                     <div className="flex flex-wrap gap-1 text-xs">
@@ -131,12 +122,19 @@ const Test = () => {
                     <span className="font-semibold text-xs">John M. <span className="text-xs font-normal text-gray-500">(Safety-Focused)</span></span>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
                       <div className="text-xs">Safety-focused renewal</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 08:15 AM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 25
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: Accident Forgiveness
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -153,7 +151,7 @@ const Test = () => {
                     </div>
                   </div>
                   <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-3">
-                    <span className="text-xs font-medium">RL Decision:</span> Safety-focused messaging with single touchpoint resulted in direct conversion
+                    <span className="text-xs font-medium">RL Decision:</span> Safety-focused formal messaging with single touchpoint resulted in direct conversion
                   </div>
                 </div>
                 
@@ -166,12 +164,19 @@ const Test = () => {
                     <span className="font-semibold text-xs">Sarah T. <span className="text-xs font-normal text-gray-500">(Price-Sensitive)</span></span>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
                       <div className="text-xs">Savings-focused offer</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 07:30 AM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 28
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: 10% Loyalty Discount
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -186,12 +191,19 @@ const Test = () => {
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <MessageSquare className="h-2 w-2 mr-1" /> SMS
                       </div>
                       <div className="text-xs">Urgent + Savings</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 05:45 PM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 25
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: 15% Limited Time Discount
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -209,7 +221,7 @@ const Test = () => {
                   </div>
                   
                   <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-3">
-                    <span className="text-xs font-medium">RL Decision:</span> Channel shift + urgency based on browsing behavior
+                    <span className="text-xs font-medium">RL Decision:</span> Channel shift + urgency + better offer based on browsing behavior and evening timing
                   </div>
                 </div>
                 
@@ -222,12 +234,19 @@ const Test = () => {
                     <span className="font-semibold text-xs">Robert K. <span className="text-xs font-normal text-gray-500">(Family-Focused)</span></span>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Bell className="h-2 w-2 mr-1" /> Push
                       </div>
                       <div className="text-xs">Family-focused message</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 10:20 AM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 30
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: Family Protection Bundle
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -242,12 +261,19 @@ const Test = () => {
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
                       <div className="text-xs">Detailed benefits</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 03:15 PM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 27
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: Family Protection + Roadside
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -262,12 +288,19 @@ const Test = () => {
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Phone className="h-2 w-2 mr-1" /> Voice
                       </div>
                       <div className="text-xs">Agent Call</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 11:00 AM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 22
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: Premium Protection (Weekend Special)
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -285,7 +318,7 @@ const Test = () => {
                   </div>
                   
                   <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700 mb-3">
-                    <span className="text-xs font-medium">RL Decision:</span> Escalation to human touchpoint after digital engagement showed interest
+                    <span className="text-xs font-medium">RL Decision:</span> Escalation to human touchpoint with premium weekend offer after digital engagement showed interest
                   </div>
                 </div>
                 
@@ -298,12 +331,19 @@ const Test = () => {
                     <span className="font-semibold text-xs">David L. <span className="text-xs font-normal text-gray-500">(Budget Conscious)</span></span>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <MessageSquare className="h-2 w-2 mr-1" /> SMS
                       </div>
                       <div className="text-xs">Renewal Reminder</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 02:30 PM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 30
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: Standard Renewal
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -318,12 +358,19 @@ const Test = () => {
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Mail className="h-2 w-2 mr-1" /> Email
                       </div>
                       <div className="text-xs">Urgent Reminder</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 09:15 AM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 23
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: 20% Last Chance Discount
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -338,12 +385,19 @@ const Test = () => {
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-3 gap-1 mb-1">
-                    <div className="bg-white p-1 rounded border border-gray-200">
+                  <div className="grid grid-cols-4 gap-1 mb-1">
+                    <div className="bg-white p-1 rounded border border-gray-200 col-span-2">
                       <div className="flex items-center text-xs">
                         <Phone className="h-2 w-2 mr-1" /> Voice
                       </div>
                       <div className="text-xs">Retention call</div>
+                      <div className="text-xs text-gray-500 flex items-center mt-0.5">
+                        <Clock className="h-2 w-2 mr-0.5" /> 06:45 PM
+                        <Calendar className="h-2 w-2 ml-1 mr-0.5" /> Day 15
+                      </div>
+                      <div className="text-xs text-blue-600 mt-0.5">
+                        Offer: 25% Retention Special + Flexible Payment
+                      </div>
                     </div>
                     <div className="flex items-center justify-center text-xs">
                       <div className="bg-yellow-100 text-yellow-800 text-xs px-1 py-0.5 rounded-full flex items-center">
@@ -361,7 +415,7 @@ const Test = () => {
                   </div>
                   
                   <div className="text-xs bg-yellow-50 border border-yellow-100 p-1 rounded text-yellow-700">
-                    <span className="text-xs font-medium">RL Decision:</span> Multi-channel escalation following non-response pattern
+                    <span className="text-xs font-medium">RL Decision:</span> Multi-channel escalation with increasingly valuable offers following non-response pattern
                   </div>
                 </div>
               </CardContent>
@@ -427,7 +481,7 @@ const Test = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-yellow-500 mr-1">•</span>
-                      <span>Responds to time-limited offers</span>
+                      <span>Responds to time-limited offers in evenings</span>
                     </li>
                   </ul>
                 </div>
